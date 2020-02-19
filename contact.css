@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+div.row::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+div[class^="col-"]{
+    float: left;
+}
+div.col-1-1{
+    width: 100%;
+}
+div.col-1-2{
+    width: 50%;
+}
+
+
+html{
+    background-color: black;
+}
