@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href = "javascriptformat.css" rel = "stylesheet">
     <title>Document</title>
     <script>
         var value = 0;
@@ -30,7 +31,7 @@
                 "&body=" + urlParams.get('body') +
                 "&jewelry=" + value;
             // sets new attribute
-            document.getElementById("size").innerHTML = "size is " + value;
+            document.getElementById("jewelry").innerHTML = "<img src = 'images/jewelry/jewelry" + value + ".png'>";
         }
     </script>
 </head>
@@ -55,13 +56,13 @@
 
     <script>
         //set already known variables
-        document.getElementById("eyes").innerHTML = "<img src = 'images/color/base" + urlParams.get('color') + ".png'>";
-        document.getElementById("base").innerHTML = "<img src = 'images/eyes/eye" + urlParams.get('eye') + ".png'>";
+        document.getElementById("base").innerHTML = "<img src = 'images/color/base" + urlParams.get('color') + ".png'>";
+        document.getElementById("eyes").innerHTML = "<img src = 'images/eyes/eye" + urlParams.get('eye') + ".png'>";
         document.getElementById("pattern").innerHTML = "<img src = 'images/patterns/pattern" + urlParams.get(
             'pattern') + ".png'>";
         document.getElementById("accessories").innerHTML = "<img src = 'images/accessories/accessory" + urlParams.get(
             'accessory') + ".png'>";
-        document.getElementById("body").innerHTML = "<img src = 'images/bodyclothes/body" + value + ".png'>";
+        document.getElementById("s").innerHTML = "<img src = 'images/bodyclothes/body" + value + ".png'>";
     </script>
     </script>
 </body>
