@@ -54,8 +54,8 @@ img{
 }
 header h1{
    font-size: 80px;
-   padding-left: 9.461%;
-   padding-right: 9.4601%;
+   padding-left: 9.461vw;
+   padding-right: 9.4601vw;
    color: yellow;
    text-align: center;
    vertical-align: middle;
@@ -91,7 +91,7 @@ section{
 
 
 img#left{
-   padding-right: 16.8%;
+   padding-right: 16.8vw;
    transform: translateY(16px) rotate(180deg);
 }
 img#rubberDuck{
@@ -100,11 +100,12 @@ img#rubberDuck{
 }
 section{
    align-items: center;
-   width: 100%;
+   width: 100vw;
 }
 img#right{
    margin-right: 0px;
    padding-right: 0px;
+   
 }
 article{
    padding: 3% 300px 3% 300px;
@@ -112,7 +113,7 @@ article{
 }
 
 div{
-   margin-left: 90%;
+   margin-left: 90vw;
 }
 button{
    height: 20px;
