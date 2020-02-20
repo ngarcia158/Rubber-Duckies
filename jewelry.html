@@ -31,7 +31,7 @@
                 "&body=" + urlParams.get('body') +
                 "&jewelry=" + value;
             // sets new attribute
-            document.getElementById("size").innerHTML = "size is " + value;
+            document.getElementById("jewelry").innerHTML = "<img src = 'images/jewelry/jewelry" + value + ".png'>";
         }
     </script>
 </head>
@@ -62,7 +62,7 @@
             'pattern') + ".png'>";
         document.getElementById("accessories").innerHTML = "<img src = 'images/accessories/accessory" + urlParams.get(
             'accessory') + ".png'>";
-        document.getElementById("body").innerHTML = "<img src = 'images/bodyclothes/body" + value + ".png'>";
+        document.getElementById("s").innerHTML = "<img src = 'images/bodyclothes/body" + value + ".png'>";
     </script>
     </script>
 </body>

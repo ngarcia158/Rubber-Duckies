@@ -8,7 +8,7 @@
     <link href = "javascriptformat.css" rel = "stylesheet">
     <title>Document</title>
     <script>
-        var value = 0;
+        var value = 1;
         const queryString = window.location.search; //current parameters
 
         const urlParams = new URLSearchParams(queryString);
@@ -17,8 +17,8 @@
             value += num;
             //all available options
             if (value <= 0) { //min -1
-                value = 5;
-            } else if (value >= 6) { //max -1
+                value = 4;
+            } else if (value >= 4) { //max -1
                 value = 1;
             }
 
@@ -66,7 +66,7 @@
             'accessory') + ".png'>";
         document.getElementById("body").innerHTML = "<img src = 'images/bodyclothes/body" + urlParams.get('body') +
             ".png'>";
-        document.getElementById("body").innerHTML = "<img src = 'images/jewelry/jewelry" + urlParams.get('jewelry') +
+        document.getElementById("jewelry").innerHTML = "<img src = 'images/jewelry/jewelry" + urlParams.get('jewelry') +
             ".png'>";
         document.getElementById("size").innerHTML = "size is " + value;
     </script>
