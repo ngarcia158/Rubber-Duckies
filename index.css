@@ -53,17 +53,15 @@ img{
    display: block;
 }
 header h1{
-   font-size: 80px;
-   padding-left: 9.461vw;
-   padding-right: 9.4601vw;
+   font-size: 5vw;
+   margin-left: 12.5%;
+  
    color: yellow;
    text-align: center;
    vertical-align: middle;
    align-items: center;
 }
-img#logo{
-   margin-right: 0px;
-}
+
 header{
     display: -webkit-flex;
     display: flex;
@@ -89,7 +87,11 @@ section{
 
 }
 
-
+img#logo{
+   position: absolute;
+   right: 0px;
+   top: 0px;
+}
 img#left{
    padding-right: 16.8vw;
    transform: translateY(16px) rotate(180deg);
@@ -108,7 +110,7 @@ img#right{
    
 }
 article{
-   padding: 3% 300px 3% 300px;
+   padding: 1% 300px 5% 300px;
    text-align: center;
 }
 
@@ -121,9 +123,7 @@ button{
    border-radius: 10px;
    margin: 5px 0px 5px 10px;
 }
-button#last{
-   margin-right: 0px;
-}
+
 footer{
    background-color: darkblue;
 
