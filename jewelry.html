@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script>
+        var value = 0;
+        const queryString = window.location.search; //current parameters
+
+        const urlParams = new URLSearchParams(queryString);
+
+        function numChange(num) {
+            value += num;
+            //all available options
+            if (value <= 0) { //min -1
+                value = 5;
+            } else if (value >= 6) { //max -1
+                value = 1;
+            }
+
+            // sets next url path
+            document.getElementById("next").href =
+                "size.html?color=" + urlParams.get('color') +
+                "&eye=" + urlParams.get('eye') +
+                "&pattern=" + urlParams.get('pattern') +
+                "&accessory=" + urlParams.get('accessory') +
+                "&body=" + urlParams.get('body') +
+                "&jewelry=" + value;
+            // sets new attribute
+            document.getElementById("size").innerHTML = "size is " + value;
+        }
+    </script>
 </head>
+
 <body>
-    
+    <div style="position: relative;" id="duckyImage">
+        <div style="position: absolute; z-index: 5;" id="jewelry"></div>
+        <div style="position: absolute; z-index: 4;" id="body"></div>
+        <div style="position: absolute; z-index: 3;" id="accessories"></div>
+        <div style="position: absolute; z-index: 2;" id="eyes"></div>
+        <div style="position: absolute; z-index: 1;" id="pattern"></div>
+        <div style="position: absolute; z-index: 0;" id="base"></div>
+        <!--This is where the images go, no touching-->
+    </div>
+
+    <button onclick="numChange(-1)">previous</button>
+    <!--This goes to the previous option-->
+    <button onclick="numChange(1)">next</button>
+    <!--This goes to the next option-->
+    <a href="" id="next">next page</a>
+    <!--This goes to the next page-->
+
+    <script>
+        //set already known variables
+        document.getElementById("eyes").innerHTML = "<img src = 'images/color/base" + urlParams.get('color') + ".png'>";
+        document.getElementById("base").innerHTML = "<img src = 'images/eyes/eye" + urlParams.get('eye') + ".png'>";
+        document.getElementById("pattern").innerHTML = "<img src = 'images/patterns/pattern" + urlParams.get(
+            'pattern') + ".png'>";
+        document.getElementById("accessories").innerHTML = "<img src = 'images/accessories/accessory" + urlParams.get(
+            'accessory') + ".png'>";
+        document.getElementById("body").innerHTML = "<img src = 'images/bodyclothes/body" + value + ".png'>";
+    </script>
+    </script>
 </body>
+
 </html>
