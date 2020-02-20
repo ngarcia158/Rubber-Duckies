@@ -4,8 +4,7 @@ footer, header, main, nav, section {
 }
 
 address, article, aside, blockquote, body, cite, 
-div, dl, dt, dd, em, figcaption, figure, footer, 
-h1, h2, h3, h4, h5, h6, header, html, img, 
+div, dl, dt, dd, em, figcaption, figure, footer,  h2, h3, h4, h5, h6, header, html,  
 li, main, nav, ol, p, section, span, ul {
    margin: 0;
    padding: 0;
@@ -28,27 +27,38 @@ nav a {
 }
 
 body {
-   line-height: 100px;
+   line-height: 30px;
 }
 
 /* ======================================================================= */
 
 html{
-    background-color: #00188E;
+    background-color: red;
+    
 }
 body{
     background: linear-gradient(#717276, #C5C5C6);
-    width: 85%;
+    width: 84%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    
 
+    height: 928px;
 }
 
-img#header{
-    display: block;
+img{
+   display: block;
+}
+h1{
+   font-size: 100px;
+   padding-left: 107px;
+   padding-right: 107px;
+   color: yellow;
+}
+img#logo{
+   margin-right: 0px;
+   right: 0px;
+   float: right;
+
 }
 header{
     display: -webkit-flex;
@@ -61,7 +71,49 @@ header{
     align-items: center;
 
    width: 100%;
+   margin-bottom: 45px;
+   background-color: darkblue;
+   margin-right: 0px;
+   right: 0px;
 }
-img#right.arrow{
-    transform: rotate(180deg);
+section{
+   display: -webkit-flex;
+   display: flex;
+
+   flex-flow: row wrap;
+   -webkit-flex-flow: row wrap;
+}
+
+
+img#left{
+   margin-left: 190px;
+   transform: translateY(16px) rotate(180deg);
+}
+img#rubberDuck{
+   margin-left: 20px;
+   margin-right: 20px;
+}
+section{
+   align-items: center;
+   width: 100%;
+}
+
+article{
+   padding: 60px 300px 59px 300px;
+
+}
+
+div{
+   margin-left: 1460px;
+}
+button{
+   height: 20px;
+   width: 20px;
+   border-radius: 10px;
+   margin: 0px 5px;
+}
+footer{
+   background-color: darkblue;
+
+   width: 100%;
 }
