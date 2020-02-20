@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href = "javascriptformat.css" rel = "stylesheet">
+    <link href="javascriptformat.css" rel="stylesheet">
+    <link href="color1.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
     <script>
         /* THIS IS THE ORDER
         1. COLOR
@@ -36,13 +39,31 @@
         }
     </script>
 </head>
+
 <body>
-    <div style = "position: relative;" id = "duckyImage">
-        <div style = "position: absolute; z-index: 1;" id = "base"></div> <!--This is where the images go, no touching-->
+    <div style="position: relative;" id="duckyImage">
+        <div style="position: absolute; z-index: 1;" id="base"></div>
+        <!--This is where the images go, no touching-->
     </div>
 
-    <button onclick="numChange(-1)">previous</button> <!--This goes to the previous option-->
-    <button onclick="numChange(1)">next</button> <!--This goes to the next option-->
-    <a href = "" id = "next">next page</a> <!--This goes to the next page-->
+    <div id="interface">
+        <button onclick="numChange(-1)">previous</button>
+        <!--This goes to the previous option-->
+        <button onclick="numChange(1)">next</button>
+        <!--This goes to the next option-->
+        <a href="" id="next">next page</a>
+        <!--This goes to the next page-->
+    </div>
+    <footer>
+        <img id = "waves" src = "images/wave.svg">
+        <div class="styleIcons">
+            <i class="fas fa-paint-brush"></i>
+            <i class="fas fa-paint-brush"></i>
+            <i class="fas fa-paint-brush"></i>
+            <i class="fas fa-paint-brush"></i>
+        </div>
+
+    </footer>
 </body>
+
 </html>
