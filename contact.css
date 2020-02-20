@@ -16,6 +16,131 @@ div.col-1-2{
 }
 
 
-html{
-    background-color: black;
+header{
+    position: absolute;
+    width:100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    background: #001C55;
 }
+header h1{
+    position: absolute;
+    margin-left: 5px;
+    margin-top: auto;
+    left: 300px;
+    color: #DBD56E;
+    font-size: 80px;
+}
+
+div#form{
+    position: absolute;
+    width: 600px;
+    height: 640px;
+    border-radius: 130px;
+    top: 140px;
+    left: 50px;
+    background: rgba(152, 156, 165, 0.8);
+}
+div#form h2{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+form{
+    text-align: center;
+}
+input#nameBox{
+    width: 400px;
+    height:50px;
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    border: black 3px solid;
+    margin-top: 40px;
+}
+input#emailBox{
+    width: 400px;
+    height:50px;
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    border: black 3px solid;
+    margin-top: 40px;
+}
+textarea#msgBox{
+    width: 400px;
+    height:200px;
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    border: black 3px solid;
+    resize: none;
+    margin-top: 40px;
+}
+button{
+    width: 200px;
+    height: 50px;
+    border: black 3px solid;
+    border-radius: 50px;
+    margin-top: 40px;
+    font-size: 25px;
+    background-color: #FC7753;
+}
+
+div#team{
+    position: absolute;
+    width: 600px;
+    height: 640px;
+    left: 780px;
+    top: 140px;
+    background: rgba(0, 28, 85, 0.8);
+    border-radius: 130px;
+}
+div#team h2{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+div#nicole,div#nick,div#jazzmyne,div#dylan,div#meadow{
+    width: 480px;
+    height: 70px;
+
+    margin-left: 60px;
+    margin-bottom: 40px;
+    background: rgba(187, 187, 187, 0.3);
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: rgba(252, 119, 83,1);
+}
+
+
+
+
+
+
+
+
+
+/*
+a#navicon{
+    display: none;
+ }
+ 
+ 
+ 
+ @media only screen and (max-width: 480px) {
+    a#navicon{
+       display: block;
+   }
+   nav.horizontal ul{
+       display: none;
+   }
+   a#navicon:hover+ul, nav.horizontal ul:hover{
+       display: block;
+   }
+    
+ }
+ */
