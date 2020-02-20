@@ -15,6 +15,25 @@ div.col-1-2{
     width: 50%;
 }
 
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+
+
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+nav a {
+   text-decoration: none;
+}
+
+
+
+/*===============================================================*/
 
 header{
     position: absolute;
@@ -29,7 +48,7 @@ header h1{
     margin-left: 5px;
     margin-top: auto;
     left: 300px;
-    color: #DBD56E;
+    color: rgb(236, 228, 65);
     font-size: 80px;
 }
 
@@ -116,7 +135,11 @@ div#nicole,div#nick,div#jazzmyne,div#dylan,div#meadow{
     box-shadow: rgba(252, 119, 83,1);
 }
 
-
+footer{
+    background-color: darkblue;
+ 
+    width: 100%;
+ }
 
 
 
@@ -129,7 +152,11 @@ a#navicon{
     display: none;
  }
  
- 
+  yes
+        <button type="button" name="theme1"></button>
+        <button type="button" name="theme2"></button>
+        <button type="button" name="theme3"></button>
+        <button type="button" name="theme4"></button>
  
  @media only screen and (max-width: 480px) {
     a#navicon{
