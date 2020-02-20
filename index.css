@@ -1,0 +1,110 @@
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+
+
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+nav a {
+   text-decoration: none;
+}
+
+body {
+   line-height: 30px;
+}
+
+/* ======================================================================= */
+
+html{
+    background-color: red;
+    
+}
+body{
+    background: linear-gradient(#717276, #C5C5C6);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 928px;
+}
+
+img{
+   display: block;
+}
+h1{
+   font-size: 100px;
+   padding-left: 255px;
+   padding-right: 255px;
+   color: yellow;
+}
+img#logo{
+   margin-right: 0px;
+   right: 0px;
+   float: right;
+
+}
+header{
+    display: -webkit-flex;
+    display: flex;
+
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+
+    text-align: center;
+    align-items: center;
+
+   width: 100%;
+   margin-bottom: 45px;
+   background-color: darkblue;
+   margin-right: 0px;
+   right: 0px;
+}
+section{
+   display: -webkit-flex;
+   display: flex;
+
+   flex-flow: row wrap;
+   -webkit-flex-flow: row wrap;
+}
+
+
+img#left{
+   margin-left: 190px;
+   transform: translateY(16px) rotate(180deg);
+}
+img#rubberDuck{
+   margin-left: 20px;
+   margin-right: 20px;
+}
+section{
+   align-items: center;
+   width: 100%;
+}
+
+article{
+   padding: 60px 300px 59px 300px;
+
+}
+
+div{
+   margin-left: 1770px;
+}
+button{
+   height: 20px;
+   width: 20px;
+   border-radius: 10px;
+   margin: 0px 5px;
+}
+button#last{
+   margin-right: 0px;
+}
+footer{
+   background-color: darkblue;
+
+   width: 100%;
+}
