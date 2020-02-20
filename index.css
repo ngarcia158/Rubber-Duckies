@@ -54,16 +54,14 @@ img{
 }
 header h1{
    font-size: 80px;
-   padding-left: 9.461vw;
-   padding-right: 9.4601vw;
+   margin-left: 9.461vw;
+   margin-right: 9.4601vw;
    color: yellow;
    text-align: center;
    vertical-align: middle;
    align-items: center;
 }
-img#logo{
-   margin-right: 0px;
-}
+
 header{
     display: -webkit-flex;
     display: flex;
@@ -121,9 +119,7 @@ button{
    border-radius: 10px;
    margin: 5px 0px 5px 10px;
 }
-button#last{
-   margin-right: 0px;
-}
+
 footer{
    background-color: darkblue;
 
