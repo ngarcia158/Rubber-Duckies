@@ -14,7 +14,7 @@ body {
     background-color: #a2d9ff;
 }
 
-button {
+button{
     border-radius: 100px;
     border: 2px solid white;
     color: white;
@@ -59,7 +59,9 @@ footer {
     background-color: white;
     color: #a2d9ff;
 }
-
+p {
+    color: white;
+}
 .styleIcons {
     width: 100%;
     display: flex;
