@@ -133,7 +133,13 @@ div#nicole,div#nick,div#jazzmyne,div#dylan,div#meadow{
     text-align: center;
     box-shadow: rgba(252, 119, 83,1);
 }
-img#imgNicole, img#imgDylan, img#imgMeadow{
+div#nicole h3,div#nick  h3,div#jazzmyne h3,div#dylan h3,div#meadow h3{
+    margin-bottom: 0px;
+}
+div#nicole p,div#nick  p,div#jazzmyne p,div#dylan p,div#meadow p{
+    margin-top: 0px;
+}
+img#imgNicole, img#imgDylan, img#imgMeadow, img#imgJazz, img#imgNick{
     position: absolute;
     width: 110px;
     height: 110px;
