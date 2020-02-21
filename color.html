@@ -37,30 +37,49 @@
             document.getElementById("next").href = "eyes.html?color=" + value;
             document.getElementById("base").innerHTML = "<img src = 'images/color/base" + value + ".png'>";
         }
+
+        function colorChange(color) {
+            switch (color) {
+                case 'grey':
+                    document.getElementById('waves').style.fill = '#ffffff';
+                    break;
+                case 'orange':
+                    break;
+                case 'red':
+
+                    break;
+                case 'blue':
+
+                    break;
+                default:
+                    break;
+            }
+
+        }
     </script>
 </head>
 
 <body>
+
+
     <div style="position: relative;" id="duckyImage">
         <div style="position: absolute; z-index: 1;" id="base"></div>
         <!--This is where the images go, no touching-->
     </div>
 
-    <div id="interface">
-        <button onclick="numChange(-1)">previous</button>
-        <!--This goes to the previous option-->
-        <button onclick="numChange(1)">next</button>
-        <!--This goes to the next option-->
-        <a href="" id="next">next page</a>
-        <!--This goes to the next page-->
-    </div>
+
     <footer>
-        <img id = "waves" src = "images/wave.svg">
+        <img id="waves" src="images/wave.svg">
+        <div id="interface">
+            <button onclick="numChange(-1)"><i class="fas fa-arrow-left"></i></button>
+            <a href="" id="next">NEXT</a>
+            <button onclick="numChange(1)"><i class="fas fa-arrow-right"></i></button>
+        </div>
         <div class="styleIcons">
-            <i class="fas fa-paint-brush"></i>
-            <i class="fas fa-paint-brush"></i>
-            <i class="fas fa-paint-brush"></i>
-            <i class="fas fa-paint-brush"></i>
+            <i onclick="colorChange('grey')" class="fas fa-paint-brush"></i>
+            <i onclick="colorChange('orange')" class="fas fa-paint-brush"></i>
+            <i onclick="colorChange('red')" class="fas fa-paint-brush"></i>
+            <i onclick="colorChange('blue')" class="fas fa-paint-brush"></i>
         </div>
 
     </footer>
