@@ -21,7 +21,10 @@ li, main, nav, nav a, ol, p, section, span, ul {
 
 /* Set the default page element styles */
 
-
+p#duck{
+   margin-bottom:3%;
+   font-size:2vw
+}
 
 ul, ol {
    list-style: none;
@@ -56,7 +59,7 @@ header h1{
    font-size: 5vw;
    margin-left: 15.8%;
   
-   color: purple;
+   color: yellow;
    text-align: center;
    vertical-align: middle;
    align-items: center;
@@ -90,7 +93,7 @@ section{
 
    flex-flow: row wrap;
    -webkit-flex-flow: row wrap;
-
+   padding-bottom: 0%;
 }
 
 img#logo{
@@ -99,12 +102,13 @@ img#logo{
    top: 2px;
 }
 img#left{
-   padding-right: 16.8vw;
+   padding-right: 18vw;
    transform: translateY(16px) rotate(180deg);
 }
 img#rubberDuck{
    margin-left: 20px;
    margin-right: 20px;
+   margin-bottom: 0%;
 }
 section{
    align-items: center;
@@ -116,7 +120,7 @@ img#right{
    
 }
 article{
-   padding: 1% 300px 5% 300px;
+   padding: 0% 300px 2% 300px;
    text-align: center;
 }
 
