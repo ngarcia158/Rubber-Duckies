@@ -70,7 +70,7 @@ img#logo{
 div#form{
     position: absolute;
     width: 43%;
-    height: 40em;
+    height: 41em;
     border-radius: 130px;
     top: 130px;
     left: 50px;
@@ -78,7 +78,7 @@ div#form{
 }
 div#form h2{
     text-align: center;
-    font-size: 50px;
+    font-size: 4em;
     margin-top: 10px;
     margin-bottom: 0px;
 }
@@ -86,8 +86,8 @@ form{
     text-align: center;
 }
 input#nameBox{
-    width: 400px;
-    height:50px;
+    width: 75%;
+    height: 1.6em;
     border-radius: 50px;
     font-size: 30px;
     text-align: center;
@@ -95,8 +95,8 @@ input#nameBox{
     margin-top: 40px;
 }
 input#emailBox{
-    width: 400px;
-    height:50px;
+    width: 75%;
+    height: 1.6em;
     border-radius: 50px;
     font-size: 30px;
     text-align: center;
@@ -126,7 +126,7 @@ button{
 div#team{
     position: absolute;
     width: 43%;
-    height: 40em;
+    height: 41em;
     left: 780px;
     top: 130px;
     background: rgba(0, 28, 85, 0.8);
@@ -134,7 +134,7 @@ div#team{
 }
 div#team h2{
     text-align: center;
-    font-size: 50px;
+    font-size: 4em;
     margin-top: 10px;
     margin-bottom: 0px;
 }
