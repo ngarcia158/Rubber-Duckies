@@ -1,0 +1,34 @@
+header{
+    display: -webkit-flex;
+    display: flex;
+
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+
+    margin-top:auto;
+   text-align: center;
+   width: 100vw;
+  
+   background-color: #A23E48 ;
+   margin-right: 0px;
+   right: 0px;
+   height: 80px;
+}
+
+header h1{
+   font-size: 5vw;
+   margin-left: 15.8%;
+  
+   color: #FFF275;
+   text-align: center;
+   vertical-align: middle;
+   align-items: center;
+}
+
+
+=======================HTML======================================
+        <header>
+            <img src="images/nav.png" class ="header" alt="Nav Bar" width="69px" height="60px" id="nav" />
+            <h1>Nice Dude Rubber Ducks</h1>
+            <img  src="images/logobackground.png" alt="Logo" width="79px" height="75px" class ="header" id="logo" />
+        </header>
