@@ -54,8 +54,8 @@ header h1{
 
 div#form{
     position: absolute;
-    width: 600px;
-    height: 640px;
+    width: 43%;
+    height: 40em;
     border-radius: 130px;
     top: 130px;
     left: 50px;
@@ -110,8 +110,8 @@ button{
 
 div#team{
     position: absolute;
-    width: 600px;
-    height: 640px;
+    width: 43%;
+    height: 40em;
     left: 780px;
     top: 130px;
     background: rgba(0, 28, 85, 0.8);
