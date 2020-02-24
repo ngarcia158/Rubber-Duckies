@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+body {
+    line-height: 0;
+    box-sizing: border-box;
+}
+
+#interface {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    background-color: #a2d9ff;
+}
+
+button{
+    border-radius: 100px;
+    border: 2px solid white;
+    color: white;
+    padding: .5em;
+    margin-bottom: .2em;
+    font-size: 2em;
+    background-color: transparent;
+    width: 5%;
+    border: 2px solid white;
+
+}
+#next {
+    margin: 1em;
+    font-size: 2em;
+    border-radius: 100px;
+    height: 100%;
+    color: white;
+    padding:1em;
+    border: 2px solid white;
+    font-family: 'Source Sans Pro';
+    padding:.5em;
+    text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.styleIcons i {
+    font-size: 1.2em;
+    background-color: transparent;
+    padding: .5em;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    transition: background-color .25s, color .25s;
+}
+
+.styleIcons i:hover {
+    background-color: white;
+    color: transparent;
+}
+p {
+    color: white;
+}
+.styleIcons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    background-color: #a2d9ff;
+}
+
+#waves {
+    fill: #a2d9ff;
+}
+
+#duckyImage {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
