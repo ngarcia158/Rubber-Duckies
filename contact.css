@@ -34,7 +34,12 @@ nav a {
 
 
 /*===============================================================*/
-
+html{
+    height: 50em;
+}
+img{
+    display: block;
+ }
 header{
     position: absolute;
     width:100%;
@@ -51,7 +56,17 @@ header h1{
     color: rgb(236, 228, 65);
     font-size: 5vw;
 }
-
+img#logo{
+    position: absolute;
+    right: 5em;
+    top: .5em;
+ }
+ img#navicon{
+    padding-top: 1.5%;
+    padding-left: 5%;
+    margin-right: 1%;
+    
+ }
 div#form{
     position: absolute;
     width: 43%;
@@ -151,11 +166,11 @@ img#imgNicole, img#imgDylan, img#imgMeadow, img#imgJazz, img#imgNick{
 
 
 footer{
+    position: absolute;
     background-color: darkblue;
     width: 100%;
-    position: absolute;
-    bottom: 0px;
     left: 0px;
+    top: 50em;
  }
 footer button{
     float: right;
