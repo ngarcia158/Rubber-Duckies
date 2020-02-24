@@ -107,11 +107,11 @@ img#logo{
 }
 img#left{
    padding-right: 18vw;
-   transform: translateY(16px) rotate(180deg);
+   transform: translateY(14px) rotate(180deg);
 }
 img#rubberDuck{
    margin-left: 20px;
-   margin-right: 20px;
+   margin-right: 10px;
    margin-bottom: 0%;
 }
 section{
