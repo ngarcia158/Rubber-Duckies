@@ -22,7 +22,7 @@ button{
     margin-bottom: .2em;
     font-size: 2em;
     background-color: transparent;
-    width: 100px;
+    width: 5%;
     border: 2px solid white;
 
 }
@@ -80,7 +80,6 @@ p {
 
 #duckyImage {
     height: 550px;
-    margin-top: -5em;
     display: flex;
     align-items: center;
     justify-content: center;

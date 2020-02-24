@@ -47,42 +47,33 @@
                     document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#7A9CC6';
                     break;
                 case '2':
-                document.getElementById('wave').style.fill = '#9FBBCC';
+                    document.getElementById('wave').style.fill = '#9FBBCC';
                     document.getElementById('interface').style.backgroundColor = '#9FBBCC';
                     document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#9FBBCC';
                     break;
                 case '3':
-                document.getElementById('wave').style.fill = '#B3D2B2';
+                    document.getElementById('wave').style.fill = '#B3D2B2';
                     document.getElementById('interface').style.backgroundColor = '#B3D2B2';
                     document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#B3D2B2';
                     break;
                 case '4':
-                document.getElementById('wave').style.fill = '#90A8C3';
+                    document.getElementById('wave').style.fill = '#90A8C3';
                     document.getElementById('interface').style.backgroundColor = '#90A8C3';
                     document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#90A8C3';
                     break;
                 default:
                     break;
             }
-
         }
     </script>
 </head>
 
 <body>
-        <header>
-                <h1>Nice Dude Rubber Ducks</h1>
-                <nav id="vertical" > 
-                    <a id="navicon" href="#"><img src="images/nav.png" alt="" /></a>
-                    <ul id="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="reviews.html">Customer Ducks</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <img  src="images/logo.jpg" alt="Logo" width="79px" height="75px" class ="header" id="logo" />
-            </header>
+    <header>
+        <img src="images/nav.png" class ="header" alt="Nav Bar" width="69px" height="60px" id="nav" />
+        <h1>Nice Dude Rubber Ducks</h1>
+        <img  src="images/logobackground.png" alt="Logo" width="79px" height="75px" class ="header" id="logo" />
+    </header>
 
     <div style="position: relative;" id="duckyImage">
         <div style="position: absolute; z-index: 1;" id="base"></div>
@@ -92,7 +83,9 @@
 
     <footer>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path id = "wave" fill = "#a2d9ff" fill-opacity="1" d="M0,128L48,149.3C96,171,192,213,288,208C384,203,480,149,576,138.7C672,128,768,160,864,186.7C960,213,1056,235,1152,224C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            <path id="wave" fill="#a2d9ff" fill-opacity="1"
+                d="M0,128L48,149.3C96,171,192,213,288,208C384,203,480,149,576,138.7C672,128,768,160,864,186.7C960,213,1056,235,1152,224C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
         </svg>
         <div id="interface">
             <button onclick="numChange(-1)"><i class="fas fa-arrow-left"></i></button>
@@ -108,8 +101,8 @@
 
     </footer>
     <script>
-            //set already known variables
-            document.getElementById("base").innerHTML = "<img src = 'images/color/base" + 3 + ".png'>";
+        //set already known variables
+        document.getElementById("base").innerHTML = "<img src = 'images/color/base" + 3 + ".png'>";
     </script>
 </body>
 
