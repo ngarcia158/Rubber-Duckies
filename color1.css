@@ -26,19 +26,30 @@ button{
     border: 2px solid white;
 
 }
-#next {
+#next{
     margin: 1em;
     font-size: 2em;
     border-radius: 100px;
     height: 100%;
     color: white;
-    padding:1em;
+  
     border: 2px solid white;
     font-family: 'Source Sans Pro';
-    padding:.5em;
+    padding:.7em;
     text-decoration: none;
 }
-
+input {
+    margin: 1em;
+    font-size: 2em;
+    border-radius: 100px;
+    height: 100%;
+    color: gray;
+    
+    border: 2px solid white;
+    font-family: 'Source Sans Pro';
+    padding:.1em;
+    text-decoration: none;
+}
 footer {
     position: absolute;
     bottom: 0;

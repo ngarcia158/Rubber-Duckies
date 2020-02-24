@@ -136,10 +136,26 @@ button{
    width: 20px;
    border-radius: 10px;
    margin: 5px 0px 5px 10px;
+   border-style: outset;   
 }
 
 footer{
    background-color: #A23E48;
 
    width: 100%;
+}
+
+button#one{
+   background-color: #3C91E6;
+}
+button#two{
+   background-color: #A23E48;
+}
+
+button#three{
+   background-color: #8980F5;
+}
+
+button#four{
+   background-color:#111D4A; ;
 }
