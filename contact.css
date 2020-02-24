@@ -34,7 +34,12 @@ nav a {
 
 
 /*===============================================================*/
-
+html{
+    height: 50em;
+}
+img{
+    display: block;
+ }
 header{
     position: absolute;
     width:100%;
@@ -51,11 +56,21 @@ header h1{
     color: rgb(236, 228, 65);
     font-size: 5vw;
 }
-
+img#logo{
+    position: absolute;
+    right: 5em;
+    top: .5em;
+ }
+ img#navicon{
+    padding-top: 1.5%;
+    padding-left: 5%;
+    margin-right: 1%;
+    
+ }
 div#form{
     position: absolute;
     width: 43%;
-    height: 40em;
+    height: 41em;
     border-radius: 130px;
     top: 130px;
     left: 50px;
@@ -63,7 +78,7 @@ div#form{
 }
 div#form h2{
     text-align: center;
-    font-size: 50px;
+    font-size: 4em;
     margin-top: 10px;
     margin-bottom: 0px;
 }
@@ -71,8 +86,8 @@ form{
     text-align: center;
 }
 input#nameBox{
-    width: 400px;
-    height:50px;
+    width: 75%;
+    height: 1.6em;
     border-radius: 50px;
     font-size: 30px;
     text-align: center;
@@ -80,8 +95,8 @@ input#nameBox{
     margin-top: 40px;
 }
 input#emailBox{
-    width: 400px;
-    height:50px;
+    width: 75%;
+    height: 1.6em;
     border-radius: 50px;
     font-size: 30px;
     text-align: center;
@@ -89,8 +104,8 @@ input#emailBox{
     margin-top: 40px;
 }
 textarea#msgBox{
-    width: 400px;
-    height:200px;
+    width: 75%;
+    height: 7em;
     border-radius: 50px;
     font-size: 30px;
     text-align: center;
@@ -99,19 +114,19 @@ textarea#msgBox{
     margin-top: 40px;
 }
 button{
-    width: 200px;
-    height: 50px;
+    width: 30%;
+    height: 2em;
     border: black 3px solid;
     border-radius: 50px;
-    margin-top: 40px;
-    font-size: 25px;
+    margin-top: 1em;
+    font-size: 2em;
     background-color: #FC7753;
 }
 
 div#team{
     position: absolute;
     width: 43%;
-    height: 40em;
+    height: 41em;
     left: 780px;
     top: 130px;
     background: rgba(0, 28, 85, 0.8);
@@ -119,7 +134,7 @@ div#team{
 }
 div#team h2{
     text-align: center;
-    font-size: 50px;
+    font-size: 4em;
     margin-top: 10px;
     margin-bottom: 0px;
 }
@@ -151,11 +166,11 @@ img#imgNicole, img#imgDylan, img#imgMeadow, img#imgJazz, img#imgNick{
 
 
 footer{
+    position: absolute;
     background-color: darkblue;
     width: 100%;
-    position: absolute;
-    bottom: 0px;
     left: 0px;
+    top: 50em;
  }
 footer button{
     float: right;
