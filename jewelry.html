@@ -41,19 +41,11 @@
 </head>
 
 <body>
-        <header>
-                <h1>Nice Dude Rubber Ducks</h1>
-                <nav id="vertical" > 
-                    <a id="navicon" href="#"><img src="images/nav.png" alt="" /></a>
-                    <ul id="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="reviews.html">Customer Ducks</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <img  src="images/logo.jpg" alt="Logo" width="79px" height="75px" class ="header" id="logo" />
-            </header>
+    <header>
+        <img src="images/nav.png" class ="header" alt="Nav Bar" width="69px" height="60px" id="nav" />
+        <h1>Nice Dude Rubber Ducks</h1>
+        <img  src="images/logobackground.png" alt="Logo" width="79px" height="75px" class ="header" id="logo" />
+    </header>
             
 
 
@@ -79,10 +71,10 @@
                 <button onclick="numChange(1)"><i class="fas fa-arrow-right"></i></button>
             </div>
             <div class="styleIcons">
-                <i onclick="colorChange('grey')" class="fas fa-paint-brush"></i>
-                <i onclick="colorChange('orange')" class="fas fa-paint-brush"></i>
-                <i onclick="colorChange('red')" class="fas fa-paint-brush"></i>
-                <i onclick="colorChange('blue')" class="fas fa-paint-brush"></i>
+                <i onclick="colorChange('1')" class="fas fa-paint-brush"></i>
+                <i onclick="colorChange('2')" class="fas fa-paint-brush"></i>
+                <i onclick="colorChange('3')" class="fas fa-paint-brush"></i>
+                <i onclick="colorChange('4')" class="fas fa-paint-brush"></i>
             </div>
     
         </footer>
@@ -96,6 +88,33 @@
             'accessory') + ".png'>";
             document.getElementById("body").innerHTML = "<img src = 'images/bodyclothes/body" + urlParams.get('body') +
             ".png'>";
+            function colorChange(color) {
+            switch (color) {
+                case '1':
+                    document.getElementById('wave').style.fill = '#7A9CC6';
+                    document.getElementById('interface').style.backgroundColor = '#7A9CC6';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#7A9CC6';
+                    break;
+                case '2':
+                    document.getElementById('wave').style.fill = '#9FBBCC';
+                    document.getElementById('interface').style.backgroundColor = '#9FBBCC';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#9FBBCC';
+                    break;
+                case '3':
+                    document.getElementById('wave').style.fill = '#B3D2B2';
+                    document.getElementById('interface').style.backgroundColor = '#B3D2B2';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#B3D2B2';
+                    break;
+                case '4':
+                    document.getElementById('wave').style.fill = '#90A8C3';
+                    document.getElementById('interface').style.backgroundColor = '#90A8C3';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#90A8C3';
+                    break;
+                default:
+                    break;
+            }
+
+        }
     </script>
     </script>
 </body>
