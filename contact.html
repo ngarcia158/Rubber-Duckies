@@ -72,16 +72,37 @@
                 623-332-6775 <br/>
             </p>
         </div>
-
     </div>
+    
     <footer>
         <div>
-            <button name="submit" type="button" onclick="Run1"></button>
-            <button name="submit" type="button" onclick="Run2"></button>
-            <button name="submit" type="button" onclick="Run3"></button>
-            <button name="submit" type="button" onclick="Run4" id="last"></button>
+            <button type="button" onclick="colorChange('1')"></button>
+            <button type="button" onclick="colorChange('2')"></button>
+            <button type="button" onclick="colorChange('3')"></button>
+            <button type="button" onclick="colorChange('4')"></button>
         </div>
     </footer>
-    
+    <script>
+        function colorChange(color) {
+                switch (color) {
+                    case '1':
+                        document.getElementsByTagName('header')[0].style.backgroundColor = '#282C9C';
+                        document.getElementsByTagName('footer').style.backgroundColor = '#282C9C';
+                        document.getElementsByTagName('html').style.backgroundColor = '#FBEAEE';
+                        break;
+                    case '2':
+                        document.getElementsByTagName('header')[0].style.backgroundColor = '#FFF34D';
+                        break;
+                    case '3':
+                        document.getElementsByTagName('header')[0].style.backgroundColor = '#282C9C';
+                        break;
+                    case '4':
+                        document.getElementsByTagName('header')[0].style.backgroundColor = '#282C9C';
+                        break;
+                    default:
+                        break;
+                }
+        }
+    </script>
 </body>
 </html>
