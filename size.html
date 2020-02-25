@@ -8,6 +8,10 @@
     <link href = "javascriptformat.css" rel = "stylesheet">
     <link href="color1.css" rel="stylesheet">
     <link href="header.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Electrolize&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <script>
@@ -36,6 +40,61 @@
                 "&size=" + value;
             // sets new attribute
             document.getElementById("size").innerHTML = "Current size is " + Math.ceil(value*2.5) + " inches tall" ;
+        }
+        function colorChange(color) {
+            switch (color) {
+                case '1':
+                    document.getElementById('wave').style.fill = '#38023B';
+                    document.getElementById('interface').style.backgroundColor = '#38023B';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#38023B';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#38023B';
+                    document.getElementsByTagName('header')[0].style.color = '#38023B';
+                    document.getElementsByTagName('h1')[0].style.color = '#A288E3';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Dancing Script';
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#A288E3';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#A288E3';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#A288E3';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#A288E3';
+                    break;
+                case '2':
+                    document.getElementById('wave').style.fill = '#0B0C10';
+                    document.getElementById('interface').style.backgroundColor = '#0B0C10';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#0B0C10';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#1F2833';
+                    document.getElementsByTagName('h1')[0].style.color = '#66FCF1';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Electrolize';
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#45A29E';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#45A29E';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#45A29E';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#45A29E';
+                    break;
+                case '3':
+                    document.getElementById('wave').style.fill = '#00458B';
+                    document.getElementById('interface').style.backgroundColor = '#00458B';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#00458B';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#99DDFF';
+                    document.getElementsByTagName('h1')[0].style.color = '#00458B';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Sigmar One';
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#3FD2C7';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#3FD2C7';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#3FD2C7';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#3FD2C7';
+                    break;
+                case '4':
+                    document.getElementById('wave').style.fill = '#1D2228';
+                    document.getElementById('interface').style.backgroundColor = '#1D2228';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#1D2228';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#1D2228';
+                    document.getElementsByTagName('h1')[0].style.color = '#FB8122';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Share Tech Mono';
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#FB8122';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#FB8122';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#FB8122';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#FB8122';
+                    break;
+                default:
+                    break;
+            }
         }
     </script>
 </head>
@@ -68,10 +127,10 @@
                 <button onclick="numChange(1)"><i class="fas fa-arrow-right"></i></button>
             </div>
             <div class="styleIcons">
-                <i onclick="colorChange('grey')" class="fas fa-paint-brush"></i>
-                <i onclick="colorChange('orange')" class="fas fa-paint-brush"></i>
-                <i onclick="colorChange('red')" class="fas fa-paint-brush"></i>
-                <i onclick="colorChange('blue')" class="fas fa-paint-brush"></i>
+                <i onclick="colorChange('1')" class="fas fa-paint-brush"></i>
+                <i onclick="colorChange('2')" class="fas fa-paint-brush"></i>
+                <i onclick="colorChange('3')" class="fas fa-paint-brush"></i>
+                <i onclick="colorChange('4')" class="fas fa-paint-brush"></i>
             </div>
     
         </footer>
