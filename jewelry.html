@@ -8,6 +8,7 @@
     <link href = "javascriptformat.css" rel = "stylesheet">
     <link href="color1.css" rel="stylesheet">
     <link href="header.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lacquer|Yeon+Sung&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
     <title>Jewelry</title>
 
@@ -43,11 +44,7 @@
 <body>
     <header style = "background-color: #a2d9ff;">
         <img src="images/nav.png" class ="header" alt="Nav Bar" width="69px" height="60px" id="nav" />
-<<<<<<< Updated upstream
         <h1 style = " color: white;">Nice Dude Rubber Ducks</h1>
-=======
-        <h1 id="h1" >Nice Dude Rubber Ducks</h1>
->>>>>>> Stashed changes
         <img  src="images/logobackground.png" alt="Logo" width="79px" height="75px" class ="header" id="logo" />
         <style></style>
     </header>
@@ -76,10 +73,10 @@
                 <button onclick="numChange(1)"><i class="fas fa-arrow-right"></i></button>
             </div>
             <div class="styleIcons">
-                <i onclick="run1()" class="fas fa-paint-brush"></i>
-                <i onclick="run2()" class="fas fa-paint-brush"></i>
-                <i onclick="run3()" class="fas fa-paint-brush"></i>
-                <i onclick="run4()" class="fas fa-paint-brush"></i>
+                <i onclick="colorChange('1')" class="fas fa-paint-brush"></i>
+                <i onclick="colorChange('2')" class="fas fa-paint-brush"></i>
+                <i onclick="colorChange('3')" class="fas fa-paint-brush"></i>
+                <i onclick="colorChange('4')" class="fas fa-paint-brush"></i>
             </div>
     
         </footer>
@@ -93,7 +90,48 @@
             'accessory') + ".png'>";
             document.getElementById("body").innerHTML = "<img src = 'images/bodyclothes/body" + urlParams.get('body') +
             ".png'>";
-    </script>
+
+        function colorChange(color) {
+            switch (color) {
+                case '1':
+                document.getElementById('wave').style.fill = '#36bfff';
+                    document.getElementById('interface').style.backgroundColor = '#36bfff';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#36bfff';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#ffde36';
+                    document.getElementsByTagName('h1')[0].style.color = '#845A6D';
+                    document.getElementsByTagName('header')[0].style.textShadow = '2px 2px black';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Amatic SC';
+                    document.getElementsByTagName('body')[0].style.backgroundColor = '#F6F4F6';
+                    document.getElementsByTagName('button')[0].style.backgroundColor = '#ff3679';
+                    document.getElementsByTagName('button')[1].style.backgroundColor = '#ff3679';
+                  
+                    break;
+                case '2':
+                    document.getElementById('wave').style.fill = '#0411ff';
+                    document.getElementById('interface').style.backgroundColor = '#0411ff';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#0411ff';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#ffbc04';
+                    document.getElementsByTagName('button')[0].style.backgroundColor = '#ff3f04';
+                    document.getElementsByTagName('button')[1].style.backgroundColor = '#ff3f04';
+                    break;
+                case '3':
+                    document.getElementById('wave').style.fill = '#34e6c8';
+                    document.getElementById('interface').style.backgroundColor = '#34e6c8';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#34e6c8';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#e6b134';
+                    document.getElementsByTagName('button')[0].style.backgroundColor = '#e6349c';
+                    document.getElementsByTagName('button')[1].style.backgroundColor = '#e6349c';
+                    break;
+                case '4':
+                    document.getElementById('wave').style.fill = '#a2d9ff';
+                    document.getElementById('interface').style.backgroundColor = '#a2d9ff';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#a2d9ff';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#a2d9ff';
+                    break;
+                default:
+                    break;
+            }
+        }
     </script>
 </body>
 
