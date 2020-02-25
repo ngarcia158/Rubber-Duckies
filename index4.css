@@ -43,7 +43,42 @@ nav a {
    text-decoration: none;
 }
 
+nav{
+   position: absolute;
+   left: 0px;
+   top: 5px;
+}
+#navicon{
+   display: block;
+}
+nav.horizontal ul{
+   display: none;
+}
+ul{
+   background-color: #8980F5;
+   width: 10vw;
 
+}
+
+li{
+   align-content: center;
+   text-align: center;
+}
+#navicon:focus+ul, #navicon:focus+ul{
+   margin-top: 10%;
+   display: block;
+   height: 200%;
+}
+
+header h1{
+   font-size: 5vw;
+   margin-left: 22%;
+  
+   color: #FA824C;
+   text-align: center;
+   vertical-align: middle;
+   align-items: center;
+}
 /* ======================================================================= */
 
 body{
@@ -58,15 +93,6 @@ body{
 
 img{
    display: block;
-}
-header h1{
-   font-size: 5vw;
-   margin-left: 15.8%;
-  
-   color: #3993DD ;
-   text-align: center;
-   vertical-align: middle;
-   align-items: center;
 }
 
 img#nav{
@@ -159,4 +185,19 @@ footer{
    background-color: #FE4A49;
 
    width: 100%;
+}
+#navicon{
+   display: block;
+}
+nav.horizontal ul{
+   display: none;
+}
+
+#navicon:checked+ul, #navicon:checked+ul, h1 {
+   display: block;
+   height: 200%;
+}
+nav{
+   position: absolute;
+   left: 0px;
 }
