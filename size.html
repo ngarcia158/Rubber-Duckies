@@ -40,29 +40,49 @@
         function colorChange(color) {
             switch (color) {
                 case '1':
-                    document.getElementById('wave').style.fill = '#7A9CC6';
-                    document.getElementById('interface').style.backgroundColor = '#7A9CC6';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#7A9CC6';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#7A9CC6';
-                    document.getElementsByTagName('header')[0].style.color = '#7A9CC6';
+                    document.getElementById('wave').style.fill = '#38023B';
+                    document.getElementById('interface').style.backgroundColor = '#38023B';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#38023B';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#38023B';
+                    document.getElementsByTagName('header')[0].style.color = '#38023B';
+                    document.getElementsByTagName('h1')[0].style.color = '#A288E3';
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#A288E3';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#A288E3';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#A288E3';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#A288E3';
                     break;
                 case '2':
                     document.getElementById('wave').style.fill = '#9FBBCC';
                     document.getElementById('interface').style.backgroundColor = '#9FBBCC';
                     document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#9FBBCC';
                     document.getElementsByTagName('header')[0].style.backgroundColor = '#9FBBCC';
+                    document.getElementsByTagName('h1')[0].style.color = '#9b111e';
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#9b111e';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#9b111e';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#9b111e';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#9b111e';
                     break;
                 case '3':
                     document.getElementById('wave').style.fill = '#B3D2B2';
                     document.getElementById('interface').style.backgroundColor = '#B3D2B2';
                     document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#B3D2B2';
                     document.getElementsByTagName('header')[0].style.backgroundColor = '#B3D2B2';
+                    document.getElementsByTagName('h1')[0].style.color = '#9b111e';
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#9b111e';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#9b111e';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#9b111e';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#9b111e';
                     break;
                 case '4':
                     document.getElementById('wave').style.fill = '#90A8C3';
                     document.getElementById('interface').style.backgroundColor = '#90A8C3';
                     document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#90A8C3';
                     document.getElementsByTagName('header')[0].style.backgroundColor = '#90A8C3';
+                    document.getElementsByTagName('h1')[0].style.color = '#9b111e';
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#9b111e';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#9b111e';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#9b111e';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#9b111e';
                     break;
                 default:
                     break;
@@ -99,10 +119,10 @@
                 <button onclick="numChange(1)"><i class="fas fa-arrow-right"></i></button>
             </div>
             <div class="styleIcons">
-                <i onclick="colorChange('grey')" class="fas fa-paint-brush"></i>
-                <i onclick="colorChange('orange')" class="fas fa-paint-brush"></i>
-                <i onclick="colorChange('red')" class="fas fa-paint-brush"></i>
-                <i onclick="colorChange('blue')" class="fas fa-paint-brush"></i>
+                <i onclick="colorChange('1')" class="fas fa-paint-brush"></i>
+                <i onclick="colorChange('2')" class="fas fa-paint-brush"></i>
+                <i onclick="colorChange('3')" class="fas fa-paint-brush"></i>
+                <i onclick="colorChange('4')" class="fas fa-paint-brush"></i>
             </div>
     
         </footer>
