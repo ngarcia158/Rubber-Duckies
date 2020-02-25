@@ -59,11 +59,7 @@ header h1{
 img#logo{
     position: absolute;
     right: 5em;
-<<<<<<< HEAD
-    top: .7em;
-=======
     top: .69em;
->>>>>>> contact2
  }
  img#navicon{
     padding-top: 1.5%;
@@ -188,30 +184,3 @@ footer button{
 
 
 
-
-
-/*
-a#navicon{
-    display: none;
- }
- 
-  yes
-        <button type="button" name="theme1"></button>
-        <button type="button" name="theme2"></button>
-        <button type="button" name="theme3"></button>
-        <button type="button" name="theme4"></button>
- 
- @media only screen and (max-width: 480px) {
-    a#navicon{
-       display: block;
-   }
-   nav.horizontal ul{
-       display: none;
-   }
-   a#navicon:hover+ul, nav.horizontal ul:hover{
-       display: block;
-   }
-    
-    
- }
- */
