@@ -42,7 +42,10 @@ nav ul {
 nav a {
    text-decoration: none;
 }
-
+nav.horizontal{
+   background-color: #3C91E6;
+   
+}
 a#navicon{
    display: block;
 }
