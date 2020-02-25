@@ -88,9 +88,12 @@ body{
    width: 100%;
     margin-left: 0px;
     margin-right: 0px;
-   
+    font-family: 'Roboto Slab', sans-serif;
 }
-
+p{
+   font-family: 'Roboto Slab', sans-serif;
+   font-size: 13px; padding-bottom: 2px;
+}
 img{
    display: block;
 }

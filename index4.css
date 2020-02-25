@@ -22,7 +22,8 @@ li, main, nav, nav a, ol, p, section, span, ul {
 /* Set the default page element styles */
 p{
    color: #1E1E24;
-   font-family: 'Roboto Condensed', sans-serif;
+   font-family: 'Playfair Display', sans-serif;
+   font-size: 14px;
 }
 
 p#duck{
@@ -72,8 +73,8 @@ li{
 
 header h1{
    font-size: 5vw;
-   margin-left: 22%;
-  
+   margin-left: 21%;
+  padding-top: 0px;
    color: #FA824C;
    text-align: center;
    vertical-align: middle;
@@ -88,7 +89,8 @@ body{
    width: 100%;
     margin-left: 0px;
     margin-right: 0px;
-   
+    font-family: 'Playfair Display', sans-serif;
+
 }
 
 img{
