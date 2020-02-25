@@ -37,7 +37,7 @@ header{
     height: 100px;
     left: 0px;
     top: 0px;
-    background: #001C55;
+    background-color: #001C55;
 }
 header h1{
     position: absolute;
