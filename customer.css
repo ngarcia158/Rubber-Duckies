@@ -1,4 +1,6 @@
-
+body {
+    background-color: #c4e6ff;
+}
 #reviewContainer {
   color: #c4e6ff;
     height: 50vh;
