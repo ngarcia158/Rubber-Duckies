@@ -13,8 +13,13 @@ body {
     margin-left: auto;
     background-color: #a2d9ff;
 }
-
+button:focus {
+    outline: none;
+    border-radius: 35%;
+    border: 4px dotted #0000007a;
+}
 button{
+    
     border-radius: 100px;
     border: 2px solid white;
     color: white;
