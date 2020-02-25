@@ -43,6 +43,16 @@ nav a {
    text-decoration: none;
 }
 
+a#navicon{
+   display: block;
+}
+nav.horizontal ul{
+   display: none;
+}
+
+a#navicon:focus+ul, a#navicon:focus+ul {
+   display: block;
+}
 
 /* ======================================================================= */
 
