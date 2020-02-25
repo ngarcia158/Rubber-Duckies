@@ -1,0 +1,54 @@
+
+#reviewContainer {
+  color: #c4e6ff;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.review {
+    overflow: scroll;
+    position: relative;
+    margin-left: auto;
+    font-family: 'Source Sans Pro';
+    box-shadow: -1px 0px 5px rgba(94, 94, 94, 0.308);
+    border-radius: 5px;
+    line-height: 1;
+    background-color: white;
+    z-index: 99;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid rgb(206, 206, 206);
+    height: 50%;
+    width: 25%;
+    flex-direction: column;
+    
+}
+p {
+    color: rgb(102, 102, 102);
+    font-size: 1.15rem;
+}
+p::before {
+    content: "“";
+    font-size: 2rem;
+}
+p::after {
+    content: "”";
+    
+}
+
+.review h1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: rgb(102, 102, 102);
+    text-align: right;
+    font-size: 2rem;
+    padding: 10px;
+}
+.review h1::before {
+    content: "–";
+}
