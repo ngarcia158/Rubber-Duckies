@@ -42,7 +42,20 @@ nav ul {
 nav a {
    text-decoration: none;
 }
+nav.horizontal{
+   background-color: #3C91E6;
+   
+}
+a#navicon{
+   display: block;
+}
+nav.horizontal ul{
+   display: none;
+}
 
+a#navicon:focus+ul, a#navicon:focus+ul {
+   display: block;
+}
 
 /* ======================================================================= */
 
