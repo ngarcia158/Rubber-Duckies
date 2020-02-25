@@ -9,8 +9,11 @@
     <link href="color1.css" rel="stylesheet">
     <link href="header.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font|Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Body</title>
     <script>
         var value = 0;
         const queryString = window.location.search; //current parameters
@@ -47,25 +50,38 @@
                     document.getElementsByTagName('h1')[0].style.color = '#845A6D';
                     document.getElementsByTagName('header')[0].style.textShadow = '2px 2px black';
                     document.getElementsByTagName('h1')[0].style.fontFamily = 'Amatic SC';
-                    
+                    document.getElementsByTagName('body')[0].style.backgroundColor = '#F6F4F6';
                     break;
                 case '2':
-                    document.getElementById('wave').style.fill = '#9FBBCC';
-                    document.getElementById('interface').style.backgroundColor = '#9FBBCC';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#9FBBCC';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#90A8C3';
+                    document.getElementById('wave').style.fill = '#5F8260';
+                    document.getElementById('interface').style.backgroundColor = '#5F8260';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#5F8260';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#053B06';
+                    document.getElementsByTagName('header')[0].style.textShadow = '1px 1px white';
+                    document.getElementsByTagName('h1')[0].style.color = '#5F8260';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Cute Font';
+                    document.getElementsByTagName('body')[0].style.backgroundColor = 'white';
                     break;
                 case '3':
-                    document.getElementById('wave').style.fill = '#B3D2B2';
-                    document.getElementById('interface').style.backgroundColor = '#B3D2B2';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#B3D2B2';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#90A8C3';
+                    document.getElementById('wave').style.fill = '#598392';
+                    document.getElementById('interface').style.backgroundColor = '#598392';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#598392';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#598392';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Patrick Hand SC';
+                    document.getElementsByTagName('h1')[0].style.color = '#124559';
+                    document.getElementsByTagName('body')[0].style.backgroundColor = '#EFF6E0';
+                    document.getElementsByTagName('header')[0].style.textShadow = '2px 2px #01161E'
                     break;
                 case '4':
-                    document.getElementById('wave').style.fill = '#90A8C3';
-                    document.getElementById('interface').style.backgroundColor = '#90A8C3';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#90A8C3';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#90A8C3';
+                    document.getElementById('wave').style.fill = '#7F0F0B';
+                    document.getElementById('interface').style.backgroundColor = '#7F0F0B';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#7F0F0B';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#7F0F0B';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Dancing Script';
+                    document.getElementsByTagName('h1')[0].style.color = '#C62F2F';
+                    document.getElementsByTagName('body')[0].style.backgroundColor = '#FFF7F0';
+                    document.getElementsByTagName('header')[0].style.textShadow = '1px 1px black'
+
                     break;
                 default:
                     break;
