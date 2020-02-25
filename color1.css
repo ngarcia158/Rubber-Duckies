@@ -13,8 +13,12 @@ body {
     margin-left: auto;
     background-color: #a2d9ff;
 }
-
+button:focus {
+    outline: none;
+    border: 4px solid #0000007a;
+}
 button{
+    
     border-radius: 100px;
     border: 2px solid white;
     color: white;
@@ -26,19 +30,29 @@ button{
     border: 2px solid white;
 
 }
-#next {
+#next{
     margin: 1em;
     font-size: 2em;
     border-radius: 100px;
     height: 100%;
     color: white;
-    padding:1em;
     border: 2px solid white;
     font-family: 'Source Sans Pro';
-    padding:.5em;
+    padding:.7em;
     text-decoration: none;
 }
-
+input {
+    margin: 1em;
+    font-size: 2em;
+    border-radius: 100px;
+    height: 100%;
+    color: gray;
+    
+    border: 2px solid white;
+    font-family: 'Source Sans Pro';
+    padding:.1em;
+    text-decoration: none;
+}
 footer {
     position: absolute;
     bottom: 0;
@@ -86,3 +100,15 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+a#navicon{
+    display: block;
+ }
+ nav.horizontal ul{
+    display: none;
+ }
+ 
+ a#navicon:focus+ul, a#navicon:focus+ul {
+    display: block;
+ }
+ 

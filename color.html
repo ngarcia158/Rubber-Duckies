@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Color</title>
     <link href="javascriptformat.css" rel="stylesheet">
     <link href="color1.css" rel="stylesheet">
     <link href="header.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
     <script>
         /* THIS IS THE ORDER
@@ -46,7 +48,8 @@
                     document.getElementById('interface').style.backgroundColor = '#7A9CC6';
                     document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#7A9CC6';
                     document.getElementsByTagName('header')[0].style.backgroundColor = '#7A9CC6';
-                    document.getElementsByTagName('header')[0].style.color = '#7A9CC6';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Raleway';
+              
                     break;
                 case '2':
                     document.getElementById('wave').style.fill = '#9FBBCC';
@@ -55,16 +58,19 @@
                     document.getElementsByTagName('header')[0].style.backgroundColor = '#9FBBCC';
                     break;
                 case '3':
-                    document.getElementById('wave').style.fill = '#B3D2B2';
-                    document.getElementById('interface').style.backgroundColor = '#B3D2B2';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#B3D2B2';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#B3D2B2';
+                    document.getElementById('interface').style.color = '#E74B39';
+                    document.getElementsByClassName('styleIcons')[0].style.color = '#E74B39';
+                    document.getElementById('wave').style.fill = '#1C6779';
+                    document.getElementById('interface').style.backgroundColor = '#1C6779';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#1C6779';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#1C6779';
+                    document.getElementsByTagName('body')[0].style.backgroundColor =  "#F99240"
                     break;
                 case '4':
-                    document.getElementById('wave').style.fill = '#90A8C3';
-                    document.getElementById('interface').style.backgroundColor = '#90A8C3';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#90A8C3';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#90A8C3';
+                    document.getElementById('wave').style.fill = '#a2d9ff';
+                    document.getElementById('interface').style.backgroundColor = '#a2d9ff';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#a2d9ff';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#a2d9ff';
                     break;
                 default:
                     break;
@@ -74,9 +80,9 @@
 </head>
 
 <body>
-    <header style = "color: white;">
+    <header style = "background-color: #a2d9ff;">
         <img src="images/nav.png" class ="header" alt="Nav Bar" width="69px" height="60px" id="nav" />
-        <h1>Nice Dude Rubber Ducks</h1>
+        <h1 style = " color: white;">Nice Dude Rubber Ducks</h1>
         <img  src="images/logobackground.png" alt="Logo" width="79px" height="75px" class ="header" id="logo" />
     </header>
 
