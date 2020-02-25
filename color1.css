@@ -101,3 +101,15 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+a#navicon{
+    display: block;
+ }
+ nav.horizontal ul{
+    display: none;
+ }
+ 
+ a#navicon:focus+ul, a#navicon:focus+ul {
+    display: block;
+ }
+ 
