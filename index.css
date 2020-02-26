@@ -59,7 +59,7 @@ li{
 }
 /* =================================================== */
 ul{
-   background-color: #8980F5;
+   background-color: #89AAE6;
    width: 10vw;
 
 }
@@ -67,6 +67,11 @@ ul{
 li{
    align-content: center;
    text-align: center;
+   padding: 20px;
+   
+}
+li a{
+   color: black;
 }
 nav{
    position: absolute;
@@ -87,7 +92,7 @@ nav.horizontal ul{
 }
 
 header h1{
-   font-size: 5vw;
+   font-size: 4vw;
    margin-left: 22%;
   
    color: #FA824C;
@@ -202,4 +207,9 @@ footer{
    background-color: #3C91E6;
 
    width: 100%;
+}
+
+footer{
+   position: absolute;
+   bottom: 0px;
 }

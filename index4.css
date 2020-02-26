@@ -17,7 +17,10 @@ li, main, nav, nav a, ol, p, section, span, ul {
    -moz-box-sizing: border-box;
    box-sizing: border-box;  
 }
-
+footer{
+   position: absolute;
+   bottom: 0px;
+}
 
 /* Set the default page element styles */
 p{
@@ -56,7 +59,7 @@ nav.horizontal ul{
    display: none;
 }
 ul{
-   background-color: #8980F5;
+   background-color: #89AAE6;
    width: 10vw;
 
 }
@@ -64,7 +67,24 @@ ul{
 li{
    align-content: center;
    text-align: center;
+   padding: 20px;
+   
 }
+li a{
+   color: black;
+}
+nav{
+   position: absolute;
+   left: 0px;
+   top: 5px;
+}
+#navicon{
+   display: block;
+}
+nav.horizontal ul{
+   display: none;
+}
+
 #navicon:focus+ul, #navicon:focus+ul{
    margin-top: 10%;
    display: block;
@@ -72,9 +92,9 @@ li{
 }
 
 header h1{
-   font-size: 5vw;
-   margin-left: 21%;
-  padding-top: 0px;
+   font-size: 4vw;
+   margin-left: 22%;
+  
    color: #FA824C;
    text-align: center;
    vertical-align: middle;
