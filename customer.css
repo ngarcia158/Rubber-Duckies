@@ -12,7 +12,7 @@ body {
 
 
 .review {
-    overflow: scroll;
+    overflow: hidden;
     position: relative;
     margin-left: auto;
     font-family: 'Source Sans Pro';

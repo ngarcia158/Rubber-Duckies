@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,8 @@
     <link href="color1.css" rel="stylesheet">
     <link href="header.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
     <script>
         /* THIS IS THE ORDER
@@ -24,9 +24,7 @@
         */
         var value = 0;
         const queryString = window.location.search; //current parameters
-
         const urlParams = new URLSearchParams(queryString);
-
         function numChange(num) {
             value += num;
             //all available options
@@ -35,12 +33,10 @@
             } else if (value >= 6) { //max -1
                 value = 1;
             }
-
             // sets next url path
             document.getElementById("next").href = "eyes.html?color=" + value;
             document.getElementById("base").innerHTML = "<img src = 'images/color/base" + value + ".png'>";
         }
-
         function colorChange(color) {
             switch (color) {
                 case '1':
@@ -58,55 +54,54 @@
                     document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#83AD84';
                     document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#83AD84';
                     document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#83AD84';
-
                     break;
                 case '2':
-                document.getElementById('wave').style.fill = '#78474A';
-                    document.getElementById('interface').style.backgroundColor = '#78474A';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#78474A';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#78474A';
-                    document.getElementsByTagName('h1')[0].style.color = '#EEC98C';
-                    document.getElementsByTagName('body')[0].style.backgroundColor = '#A28068';
-                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Raleway';
-                    document.getElementsByTagName('button')[0].style.backgroundColor = '#83AD84';
-                    document.getElementsByTagName('button')[1].style.backgroundColor = '#83AD84';
-                    document.getElementById('next').style.backgroundColor = '#83AD84';
-                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#83AD84';
-                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#83AD84';
-                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#83AD84';
-                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#83AD84';
+                document.getElementById('wave').style.fill = '#4E598C';
+                    document.getElementById('interface').style.backgroundColor = '#4E598C';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#4E598C';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#F9C784';
+                    document.getElementsByTagName('h1')[0].style.color = '#FF8C42';
+                    document.getElementsByTagName('body')[0].style.backgroundColor = '#FF8C42';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Libre Baskerville';
+                    document.getElementsByTagName('button')[0].style.backgroundColor = '#F9C784';
+                    document.getElementsByTagName('button')[1].style.backgroundColor = '#F9C784';
+                    document.getElementById('next').style.backgroundColor = '#F9C784';
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#F9C784';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#F9C784';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#F9C784';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#F9C784';
                     break;
                 case '3':
-                document.getElementById('wave').style.fill = '#78474A';
-                    document.getElementById('interface').style.backgroundColor = '#78474A';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#78474A';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#78474A';
-                    document.getElementsByTagName('h1')[0].style.color = '#EEC98C';
-                    document.getElementsByTagName('body')[0].style.backgroundColor = '#A28068';
-                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Raleway';
-                    document.getElementsByTagName('button')[0].style.backgroundColor = '#83AD84';
-                    document.getElementsByTagName('button')[1].style.backgroundColor = '#83AD84';
-                    document.getElementById('next').style.backgroundColor = '#83AD84';
-                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#83AD84';
-                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#83AD84';
-                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#83AD84';
-                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#83AD84';
+                document.getElementById('wave').style.fill = '#FF0560';
+                    document.getElementById('interface').style.backgroundColor = '#FF0560';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#FF0560';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#FF0560';
+                    document.getElementsByTagName('h1')[0].style.color = '#FFFFFF';
+                    document.getElementsByTagName('body')[0].style.backgroundColor = '#1A82F2';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Space Mono';
+                    document.getElementsByTagName('button')[0].style.backgroundColor = '#1A82F2';
+                    document.getElementsByTagName('button')[1].style.backgroundColor = '#1A82F2';
+                    document.getElementById('next').style.backgroundColor = '#1A82F2';
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#1A82F2';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#1A82F2';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#1A82F2';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#1A82F2';
                     break;
                 case '4':
-                document.getElementById('wave').style.fill = '#78474A';
-                    document.getElementById('interface').style.backgroundColor = '#78474A';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#78474A';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#78474A';
-                    document.getElementsByTagName('h1')[0].style.color = '#EEC98C';
-                    document.getElementsByTagName('body')[0].style.backgroundColor = '#A28068';
-                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Raleway';
-                    document.getElementsByTagName('button')[0].style.backgroundColor = '#83AD84';
-                    document.getElementsByTagName('button')[1].style.backgroundColor = '#83AD84';
-                    document.getElementById('next').style.backgroundColor = '#83AD84';
-                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#83AD84';
-                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#83AD84';
-                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#83AD84';
-                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#83AD84';
+                document.getElementById('wave').style.fill = '#a2d9ff';
+                    document.getElementById('interface').style.backgroundColor = '#a2d9ff';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#a2d9ff';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#a2d9ff';
+                    document.getElementsByTagName('h1')[0].style.color = '#FFFFFF';
+                    document.getElementsByTagName('body')[0].style.backgroundColor = '#FFFFFF';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Times New Roman';
+                    document.getElementsByTagName('button')[0].style.backgroundColor = '#a2d9ff';
+                    document.getElementsByTagName('button')[1].style.backgroundColor = '#a2d9ff';
+                    document.getElementById('next').style.backgroundColor = '#a2d9ff';
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#a2d9ff';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#a2d9ff';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#a2d9ff';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#a2d9ff';
                     break;
                 default:
                     break;
@@ -114,20 +109,16 @@
         }
     </script>
 </head>
-
 <body>
     <header style="background-color: #a2d9ff;">
         <img src="images/nav.png" class="header" alt="Nav Bar" width="69px" height="60px" id="nav" />
         <h1 style=" color: white;">Nice Dude Rubber Ducks</h1>
         <img src="images/logobackground.png" alt="Logo" width="79px" height="75px" class="header" id="logo" />
     </header>
-
     <div style="position: relative;" id="duckyImage">
         <div style="position: absolute; z-index: 1;" id="base"></div>
         <!--This is where the images go, no touching-->
     </div>
-
-
     <footer>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path id="wave" fill="#a2d9ff" fill-opacity="1"
@@ -145,12 +136,10 @@
             <i onclick="colorChange('3')" class="fas fa-paint-brush"></i>
             <i onclick="colorChange('4')" class="fas fa-paint-brush"></i>
         </div>
-
     </footer>
     <script>
         //set already known variables
         document.getElementById("base").innerHTML = "<img src = 'images/color/base" + 3 + ".png'>";
     </script>
 </body>
-
 </html>
