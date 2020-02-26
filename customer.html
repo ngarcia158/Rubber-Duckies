@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,7 +10,9 @@
     <link href="color1.css" rel="stylesheet">
     <link href="header.css" rel="stylesheet">
     <link href="customer.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
     <title>Reviews</title>
     <script>
@@ -42,32 +44,59 @@
         function colorChange(color) {
             switch (color) {
                 case '1':
-                    document.getElementById('wave').style.fill = '#777DA7';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#777DA7';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#777DA7';
-                    document.getElementsByTagName('body')[0].style.backgroundColor = '#a3a9d4';
+                    document.getElementById('wave').style.fill = '#2B2D42';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#2B2D42';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#2B2D42';
+                    document.getElementsByTagName('h1')[0].style.color = '#EEC98C';
+                    document.getElementsByTagName('body')[0].style.backgroundColor = '#A28068';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Lobster';
 
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#EEC98C';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#EEC98C';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#EEC98C';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#EEC98C';
                     break;
                 case '2':
-                    document.getElementById('wave').style.fill = '#A3E7FC';
-            
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#A3E7FC';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#A3E7FC';
-                    document.getElementsByTagName('body')[0].style.backgroundColor = '#cdf3ff';
+                    document.getElementById('wave').style.fill = '#D90429';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#D90429';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#D90429';
+                    document.getElementsByTagName('h1')[0].style.color = '#8D99AE';
+                    document.getElementsByTagName('body')[0].style.backgroundColor = '#8D99AE';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Archivo Black';
+
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#2B2D42';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#2B2D42';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#2B2D42';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#2B2D42';
+
                     break;
                 case '3':
-                    document.getElementById('wave').style.fill = '#79ADDC';
+                    document.getElementById('wave').style.fill = '#AEC5EB';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#AEC5EB';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#AEC5EB';
+                    document.getElementsByTagName('h1')[0].style.color = '#685044';
+                    document.getElementsByTagName('body')[0].style.backgroundColor = '#F9DEC9';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Lilita One';
                    
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#79ADDC';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#79ADDC';
-                    document.getElementsByTagName('body')[0].style.backgroundColor = '#9ac8f1';
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#E9AFA3';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#E9AFA3';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#E9AFA3';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#E9AFA3';
+
                     break;
                 case '4':
-                    document.getElementById('wave').style.fill = '#a2d9ff';
-                 
+                document.getElementById('wave').style.fill = '#a2d9ff';
                     document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#a2d9ff';
                     document.getElementsByTagName('header')[0].style.backgroundColor = '#a2d9ff';
+                    document.getElementsByTagName('h1')[0].style.color = '#FFFFFF';
                     document.getElementsByTagName('body')[0].style.backgroundColor = '#c4e6ff';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Times New Roman';
+
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#a2d9ff';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#a2d9ff';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#a2d9ff';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#a2d9ff';
+
                     break;
                 default:
                     break;
@@ -78,16 +107,17 @@
 </head>
 
 <body>
-    
+
     <header style="background-color: #a2d9ff;">
         <img src="images/nav.png" class="header" alt="Nav Bar" width="69px" height="60px" id="nav" />
-        <h1 style = " color: white;">Nice Dude Rubber Ducks</h1>
+        <h1 style=" color: white;">Nice Dude Rubber Ducks</h1>
         <img src="images/logobackground.png" alt="Logo" width="79px" height="75px" class="header" id="logo" />
     </header>
 
     <div id="reviewContainer">
         <div class="review">
-            <p>Wow I ordered my duck, and it came overnight! Now I have a customizable companion by my bed while I waste away in sorrow!</p>
+            <p>Wow I ordered my duck, and it came overnight! Now I have a customizable companion by my bed while I waste
+                away in sorrow!</p>
             <h1>John</h1>
         </div>
         <div class="review">
@@ -99,15 +129,18 @@
             <h1>Dylan</h1>
         </div>
         <div class="review">
-            <p>Ever since buying this custom duck, my mood has improved by 200%. Everytime I'm sad I simply look over to my duck and I am reminded that there is good in this world.</p>
+            <p>Ever since buying this custom duck, my mood has improved by 200%. Everytime I'm sad I simply look over to
+                my duck and I am reminded that there is good in this world.</p>
             <h1>Nic</h1>
         </div>
         <div class="review">
-            <p>My only complaint is that I cannot buy an infinte amount. But perhaps that's not the websites fault. 10/10 would buy again.</p>
+            <p>My only complaint is that I cannot buy an infinite amount. But perhaps that's not the websites fault.
+                10/10 would buy again.</p>
             <h1>an actual duck</h1>
         </div>
         <div class="review">
-            <p>Trust me, your life will be much better after you purchase this duck. You can make an edgy duck, a cute duck. The possibilites are endless.</p>
+            <p>Trust me, your life will be much better after you purchase this duck. You can make an edgy duck, a cute
+                duck... The possibilities are endless.</p>
             <h1>Mary</h1>
         </div>
     </div>
@@ -118,7 +151,7 @@
                 d="M0,128L48,149.3C96,171,192,213,288,208C384,203,480,149,576,138.7C672,128,768,160,864,186.7C960,213,1056,235,1152,224C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
             </path>
         </svg>
-        
+
         <div class="styleIcons">
             <i onclick="colorChange('1')" class="fas fa-paint-brush"></i>
             <i onclick="colorChange('2')" class="fas fa-paint-brush"></i>

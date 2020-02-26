@@ -3,7 +3,6 @@
 body {
     line-height: 0;
     box-sizing: border-box;
-    background-color: #F49D37;
 }
 
 #interface {
@@ -12,14 +11,10 @@ body {
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    background-color: #3F88C5;
+    background-color: #a2d9ff;
 }
-button:focus {
-    outline: none;
-    border: 4px solid #0000007a;
-}
+
 button{
-    
     border-radius: 100px;
     border: 2px solid white;
     color: white;
@@ -31,31 +26,19 @@ button{
     border: 2px solid white;
 
 }
-#next{
+#next {
     margin: 1em;
     font-size: 2em;
     border-radius: 100px;
     height: 100%;
-    color: black;
+    color: white;
+    padding:1em;
     border: 2px solid white;
     font-family: 'Source Sans Pro';
-    padding:.7em;
+    padding:.5em;
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-}
-input {
-    margin: 1em;
-    font-size: 2em;
-    border-radius: 100px;
-    height: 100%;
-    color: gray;
-    
-    border: 2px solid white;
-    font-family: 'Source Sans Pro';
-    padding:.1em;
-    text-decoration: none;
-}
 footer {
     position: absolute;
     bottom: 0;
@@ -64,7 +47,7 @@ footer {
 
 .styleIcons i {
     font-size: 1.2em;
-    background-color: #D5B942;
+    background-color: transparent;
     padding: .5em;
     color: white;
     border: 2px solid white;
@@ -88,11 +71,11 @@ p {
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    background-color: #3F88C5;
+    background-color: #a2d9ff;
 }
 
-#wave {
-    fill: #3F88C5;
+#waves {
+    fill: #a2d9ff;
 }
 
 #duckyImage {
@@ -102,30 +85,4 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-a#navicon{
-    display: block;
- }
- nav.horizontal ul{
-    display: none;
- }
- 
- a#navicon:focus+ul, a#navicon:focus+ul {
-    display: block;
- }
- header {
-    display: -webkit-flex;
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    background-color: #A20021;
-    align-items: center;
-
-}
-
-header h1 {
-    color: #FFF275;
-    font-size: 5vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

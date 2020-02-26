@@ -18,7 +18,10 @@ li, main, nav, nav a, ol, p, section, span, ul {
    box-sizing: border-box;  
 }
 
-
+footer{
+   position: absolute;
+   bottom: 0px;
+}
 /* Set the default page element styles */
 p{
    color: #27233A;
@@ -48,7 +51,7 @@ nav{
    top: 5px;
 }
 ul{
-   background-color: #8980F5;
+   background-color: #89AAE6;
    width: 10vw;
 
 }
@@ -56,6 +59,16 @@ ul{
 li{
    align-content: center;
    text-align: center;
+   padding: 20px;
+   
+}
+li a{
+   color: black;
+}
+nav{
+   position: absolute;
+   left: 0px;
+   top: 5px;
 }
 #navicon{
    display: block;
@@ -71,7 +84,7 @@ nav.horizontal ul{
 }
 
 header h1{
-   font-size: 5vw;
+   font-size: 4vw;
    margin-left: 22%;
   
    color: #FA824C;

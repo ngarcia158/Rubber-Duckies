@@ -10,8 +10,14 @@
     <link href="header.css" rel="stylesheet">
     <link href="checkout.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Damion&display=swap" rel="stylesheet">
     <title>Checkout</title>
-    <script>
+    <script defer>
+        function alert() {
+            alert("Thanks for ordering, check your email for your receipt");
+        }
         var value = 0;
         const queryString = window.location.search; //current parameters
         const urlParams = new URLSearchParams(queryString);
@@ -19,28 +25,61 @@
         function colorChange(color) {
             switch (color) {
                 case '1':
-                    document.getElementById('wave').style.fill = '#E6BCCD';
-                    document.getElementById('interface').style.backgroundColor = '#E6BCCD';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#E6BCCD';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#E6BCCD';
+                document.getElementById('wave').style.fill = '#DB93B0';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#DB93B0';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#DB93B0'; 
+                    document.getElementById('interface').style.backgroundColor = '#DB93B0';
+                    document.getElementsByTagName('h1')[0].style.color = '#F7BFB4';
+                    document.getElementsByTagName('body')[0].style.backgroundColor = '#9FF9D7';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Lilita One';
+                   
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#F7BFB4';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#F7BFB4';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#F7BFB4';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#F7BFB4';
                     break;
                 case '2':
-                    document.getElementById('wave').style.fill = '#2AB7CA';
-                    document.getElementById('interface').style.backgroundColor = '#2AB7CA';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#2AB7CA';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#2AB7CA';
+                document.getElementById('wave').style.fill = '#2E1F27';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#2E1F27';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#2E1F27'; 
+                    document.getElementById('interface').style.backgroundColor = '#2E1F27';
+                    document.getElementsByTagName('h1')[0].style.color = '#DD7230';
+                    document.getElementsByTagName('body')[0].style.backgroundColor = '#F4C95D';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Vollkorn SC';
+                   
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#2E1F27';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#2E1F27';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#2E1F27';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#2E1F27';
                     break;
                 case '3':
-                    document.getElementById('wave').style.fill = '#DB3069';
-                    document.getElementById('interface').style.backgroundColor = '#DB3069';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#DB3069';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#DB3069';
+                document.getElementById('wave').style.fill = '#9A348E';
+                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#9A348E';
+                    document.getElementsByTagName('header')[0].style.backgroundColor = '#9A348E'; 
+                    document.getElementById('interface').style.backgroundColor = '#9A348E';
+                    document.getElementsByTagName('h1')[0].style.color = '#EA91A4';
+                    document.getElementsByTagName('body')[0].style.backgroundColor = '#EA91A4';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Damion';
+                   
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#EA91A4';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#EA91A4';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#EA91A4';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#EA91A4';
                     break;
                 case '4':
-                    document.getElementById('wave').style.fill = '#a2d9ff';
-                    document.getElementById('interface').style.backgroundColor = '#a2d9ff';
+                document.getElementById('wave').style.fill = '#a2d9ff';
                     document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#a2d9ff';
                     document.getElementsByTagName('header')[0].style.backgroundColor = '#a2d9ff';
+                    document.getElementById('interface').style.backgroundColor = '#a2d9ff';
+                    document.getElementsByTagName('h1')[0].style.color = '#FFFFFF';
+                    document.getElementsByTagName('body')[0].style.backgroundColor = '#FFFFFF';
+                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Times New Roman';
+
+                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#a2d9ff';
+                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#a2d9ff';
+                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#a2d9ff';
+                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#a2d9ff';
+
                     break;
                 default:
                     break;
@@ -74,7 +113,7 @@
         </svg>
         <div id="interface">
             <input type = "email" placeholder="Insert Email">
-            <a href="" id="next">Checkout</a>
+            <a onclick = "alert()" href="" id="next">Checkout</a>
            
         </div>
         <div class="styleIcons">
