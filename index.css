@@ -85,7 +85,7 @@ nav.horizontal ul{
    display: none;
 }
 
-#navicon:focus+ul, #navicon:focus+ul{
+#navicon:focus+ul{
    margin-top: 10%;
    display: block;
    height: 200%;
@@ -93,7 +93,7 @@ nav.horizontal ul{
 
 header h1{
    font-size: 4vw;
-   margin-left: 22%;
+   margin-left: 28%;
   
    color: #FA824C;
    text-align: center;
@@ -157,11 +157,16 @@ img#logo{
 img#left{
    padding-right: 18vw;
    transform: translateY(14px) rotate(180deg);
+   background-color: rgba(1, 1, 1, 0);
+}
+img#right{
+   background-color: rgba(1, 1, 1, 0);
+
 }
 img#rubberDuck{
-   margin-left: 20px;
    margin-right: 10px;
    margin-bottom: 0%;
+   margin-left: 33vw;
 }
 section{
    align-items: center;
@@ -178,7 +183,7 @@ article{
 }
 
 div{
-   margin-left: 90vw;
+   margin-left: 75vw;
 }
 button{
    height: 20px;
