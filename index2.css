@@ -72,7 +72,7 @@ nav.horizontal ul{
 
 header h1{
    font-size: 5vw;
-   margin-left: 22%;
+   margin-left: 19%;
   
    color: #FA824C;
    text-align: center;
@@ -80,8 +80,12 @@ header h1{
    align-items: center;
 }
 /* ======================================================================= */
-
+p{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+}
 body{
+   font-family: 'Montserrat', sans-serif;
    margin-top: 0%;
    margin-bottom: 0%;
    background-color: #FF3C38;
