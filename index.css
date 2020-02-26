@@ -85,12 +85,11 @@ nav.horizontal ul{
    display: none;
 }
 
-#navicon:focus+ul, #navicon:focus+ul{
+#navicon:focus+ul{
    margin-top: 10%;
    display: block;
    height: 200%;
 }
-
 header h1{
    font-size: 4vw;
    margin-left: 22%;
@@ -100,8 +99,7 @@ header h1{
    vertical-align: middle;
    align-items: center;
 }
-/* ========================= */
-/* ======================================================================= */
+/* =================================================== */
 
 body{
    margin-top: 0%;
