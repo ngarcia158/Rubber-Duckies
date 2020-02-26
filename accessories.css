@@ -3,18 +3,15 @@
 body {
     line-height: 0;
     box-sizing: border-box;
-    background-color: #40BCD8;
 }
-header{
-    background-color: #1C77C3;
-}
+
 #interface {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    background-color: #D63230;
+    background-color: #a2d9ff;
 }
 button:focus {
     outline: none;
@@ -38,12 +35,13 @@ button{
     font-size: 2em;
     border-radius: 100px;
     height: 100%;
-    color: black;
+    color: white;
     border: 2px solid white;
     font-family: 'Source Sans Pro';
     padding:.7em;
     text-decoration: none;
-    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 input {
     margin: 1em;
@@ -65,7 +63,7 @@ footer {
 
 .styleIcons i {
     font-size: 1.2em;
-    background-color: #A682FF;
+    background-color: #a2d9ff;
     padding: .5em;
     color: white;
     border: 2px solid white;
@@ -89,11 +87,11 @@ p {
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    background-color: #D63230;
+    background-color: #a2d9ff;
 }
 
 #wave {
-    fill: #D63230;
+    fill: #a2d9ff;
 }
 
 #duckyImage {
@@ -120,7 +118,7 @@ a#navicon{
     display: flex;
     align-content: center;
     justify-content: space-around;
-    background-color: #1C77C3;
+    background-color: #a2d9ff;
     align-items: center;
 
 }
@@ -128,5 +126,5 @@ a#navicon{
 header h1 {
     color: #FFF275;
     font-size: 5vw;
-
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
