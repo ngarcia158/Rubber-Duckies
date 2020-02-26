@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Size</title>
     <script>
         var value = 1;
         const queryString = window.location.search; //current parameters
@@ -105,7 +105,9 @@
     <header style = "background-color: #a2d9ff;">
         <img src="images/nav.png" class ="header" alt="Nav Bar" width="69px" height="60px" id="nav" />
         <h1 style = " color: white;">Nice Dude Rubber Ducks</h1>
-        <img  src="images/logobackground.png" alt="Logo" width="79px" height="75px" class ="header" id="logo" />
+        <a href = "index.html">
+                <img src="images/logobackground.png" alt="Logo" width="79px" height="75px" class ="header" id="logo" />
+            </a>
     </header>
     <div style="position: relative;" id="duckyImage">
         <div id="size"></div>
@@ -148,7 +150,6 @@
             ".png'>";
         document.getElementById("jewelry").innerHTML = "<img src = 'images/jewelry/jewelry" + urlParams.get('jewelry') +
             ".png'>";
-       
     </script>
 </body>
 
