@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
 
 body {
     line-height: 0;
     box-sizing: border-box;
+    font-family: 'Mitr';
 }
-
+.fa-bars {
+font-size: 2.5rem;
+color: white;
+}
 #interface {
     width: 100%;
     display: flex;
@@ -12,6 +16,9 @@ body {
     justify-content: center;
     margin-left: auto;
     background-color: #a2d9ff;
+}
+#size, #interface a, input::placeholder {
+    font-family: 'Mitr';
 }
 button:focus {
     outline: none;
@@ -111,4 +118,72 @@ a#navicon{
  a#navicon:focus+ul, a#navicon:focus+ul {
     display: block;
  }
+ header {
+    display: -webkit-flex;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+header h1 {
+    font-size: 5vw;
+}
+body {
+    background-color: #c4e6ff;
+}
+#reviewContainer {
+  color: #c4e6ff;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.review {
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    font-family: 'Source Sans Pro';
+    box-shadow: -1px 0px 5px rgba(94, 94, 94, 0.308);
+    border-radius: 5px;
+    line-height: 1;
+    background-color: white;
+    z-index: 99;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid rgb(206, 206, 206);
+    height: 50%;
+    width: 25%;
+    flex-direction: column;
+    
+}
+.review p {
+    color: rgb(102, 102, 102);
+    font-size: 1.15rem;
+}
+.review p::before {
+    content: "“";
+    font-size: 2rem;
+}
+.review  p::after {
+    content: "”";
+    
+}
+
+.review h1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: rgb(102, 102, 102);
+    text-align: right;
+    font-size: 2rem;
+    padding: 10px;
+}
+.review h1::before {
+    content: "–";
+}
  
