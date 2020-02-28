@@ -6,7 +6,7 @@ body {
 }
 .fa-bars {
     font-size: 2.5rem;
-    color: white;
+    color: #2359AF;
 }
 #interface {
     width: 100%;
@@ -27,8 +27,8 @@ body {
    padding: 2em;
     text-decoration: none;
     display: block;
-    background-color: #a2d9ff;
-    color: white;
+    background-color: #FF8882;
+    color: #FFFC72;
   }
 .dropdown-content {
     display: none;
@@ -42,16 +42,20 @@ body {
     height: 100%;
     flex-direction: column;
 }
+#wave {
+    fill: #a2d9ff;
+}
 #size,
 #interface a,
 input::placeholder {
     font-family: 'Mitr';
+    color: #2359AF;
 }
 #size {
     text-align: center;
     width: 100vw;
     font-size: 2em;
-    color: white;
+    color: #2359AF;
     z-index: 99;
     background-color: #a2d9ff;
     height: 20px;
@@ -61,22 +65,22 @@ button:focus {
     border: 4px solid #0000007a;
 }
 button {
+    
     border-radius: 100px;
-    border: 2px solid white;
-    color: white;
+    color: #2359AF;
     padding: .5em;
     margin-bottom: .2em;
     font-size: 2em;
     background-color: transparent;
     width: 100px;
-    border: 2px solid white;
+    border: 2px solid #2359AF;
 }
 #next {
     margin: 1em;
     font-size: 2em;
     border-radius: 100px;
-    color: white;
-    border: 2px solid white;
+    color: #2359AF;
+    border: 2px solid #2359AF;
     padding: .7em;
     text-decoration: none;
 }
@@ -86,7 +90,7 @@ input {
     border-radius: 100px;
     height: 100%;
     color: gray;
-    border: 2px solid white;
+    border: 2px solid #2359AF;
     font-family: 'Source Sans Pro';
     padding: .1em;
     text-decoration: none;
@@ -101,35 +105,15 @@ footer {
     bottom: 0;
     width: 100%;
 }
-.styleIcons i {
-    font-size: 1.2em;
-    background-color: transparent;
-    padding: .5em;
-    color: white;
-    border: 2px solid white;
-    border-radius: 100px;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 3%;
-    transition: background-color .25s, color .25s;
-}
-.styleIcons i:hover {
-    background-color: white;
-    color: transparent;
+.fa-bars {
+    color: #FFFC72;
 }
 p {
-    color: white;
+    color: 2359AF;
 }
-.styleIcons {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    background-color: #a2d9ff;
-}
+
 #waves {
-    fill: #a2d9ff;
+    fill: #C4FFF7;
 }
 #duckyImage {
     height: 550px;
@@ -149,6 +133,8 @@ a#navicon:focus+ul {
     display: block;
 }
 header {
+    background-color: #FF8882;
+    color: #FFFC72;
     padding: 1em 0em;
     display: -webkit-flex;
     display: flex;
@@ -158,9 +144,10 @@ header {
 }
 header h1 {
     font-size: 5vw;
+    background-color: #FF8882;
 }
 body {
-    background-color: #c4e6ff;
+    background-color: #FCFCFC;
 }
 #reviewContainer {
     color: #c4e6ff;
@@ -174,11 +161,12 @@ body {
     overflow: hidden;
     position: relative;
     margin-left: auto;
-    font-family: 'Source Sans Pro';
+    font-family: 'Mitr';
     box-shadow: -1px 0px 5px rgba(94, 94, 94, 0.308);
     border-radius: 5px;
     line-height: 1;
     background-color: white;
+    
     z-index: 10;
     margin: 1em;
     padding: 1em;
@@ -188,7 +176,7 @@ body {
     flex-direction: column;
 }
 .review p {
-    color: rgb(102, 102, 102);
+    color: rgb(141, 141, 141);
     font-size: 1.15rem;
 }
 .review p::before {
@@ -202,7 +190,7 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
-    color: rgb(102, 102, 102);
+    color: rgb(141, 141, 141);
     text-align: right;
     font-size: 2rem;
     padding: 10px;
