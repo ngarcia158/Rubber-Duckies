@@ -1,0 +1,59 @@
+div.row::after{
+    clear: both;
+    content: "";
+    display: table;
+ }
+ div[class^="col-"]{
+    float: left;
+ }
+ div.col-1-1{
+    width: 100%;
+ }
+ div.col-1-2{
+    width: 50%;
+ }
+ 
+ article, aside, figcaption, figure,
+ footer, header, main, nav, section { 
+    display: block;
+ }
+ 
+ address, article, aside, blockquote, body, cite, 
+ div, dl, dt, dd, em, figcaption, figure, footer, 
+ h1, h2, h3, h4, h5, h6, header, html, img, 
+ li, main, nav, nav a, ol, p, section, span, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;  
+ }
+ ul, ol {
+    list-style: none;
+ }
+ 
+ nav ul {
+    list-style: none;
+    list-style-image: none;
+ }
+/*     */
+nav{
+    background-color: transparent;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+}
+nav a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    color: #27233A;
+    font-family: 'Roboto Condensed', sans-serif;
+}
