@@ -144,14 +144,11 @@ img#logo{
    right: 2px;
    top: 2px;
 }
-img#left{
-   padding-right: 18vw;
-   transform: translateY(14px) rotate(180deg);
-}
+
 img#rubberDuck{
-   margin-left: 20px;
    margin-right: 10px;
    margin-bottom: 0%;
+   margin-left: 34vw;
 }
 section{
    align-items: center;
@@ -168,7 +165,7 @@ article{
 }
 
 div{
-   margin-left: 90vw;
+   margin-left: 85vw;
 }
 button{
    height: 20px;
@@ -196,5 +193,5 @@ button#three{
 }
 
 button#four{
-   background-color:#111D4A; ;
+   background-color:#FE4A49; ;
 }

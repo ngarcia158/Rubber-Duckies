@@ -7,12 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="javascriptformat.css" rel="stylesheet">
     <link href="color1.css" rel="stylesheet">
-    <link href="header.css" rel="stylesheet">
+
     <link href="checkout.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Damion&display=swap" rel="stylesheet">
     <title>Checkout</title>
     <script defer>
         function alert() {
@@ -21,81 +18,25 @@
         var value = 0;
         const queryString = window.location.search; //current parameters
         const urlParams = new URLSearchParams(queryString);
-
-        function colorChange(color) {
-            switch (color) {
-                case '1':
-                document.getElementById('wave').style.fill = '#DB93B0';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#DB93B0';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#DB93B0'; 
-                    document.getElementById('interface').style.backgroundColor = '#DB93B0';
-                    document.getElementsByTagName('h1')[0].style.color = '#F7BFB4';
-                    document.getElementsByTagName('body')[0].style.backgroundColor = '#9FF9D7';
-                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Lilita One';
-                   
-                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#F7BFB4';
-                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#F7BFB4';
-                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#F7BFB4';
-                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#F7BFB4';
-                    break;
-                case '2':
-                document.getElementById('wave').style.fill = '#2E1F27';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#2E1F27';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#2E1F27'; 
-                    document.getElementById('interface').style.backgroundColor = '#2E1F27';
-                    document.getElementsByTagName('h1')[0].style.color = '#DD7230';
-                    document.getElementsByTagName('body')[0].style.backgroundColor = '#F4C95D';
-                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Vollkorn SC';
-                   
-                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#2E1F27';
-                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#2E1F27';
-                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#2E1F27';
-                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#2E1F27';
-                    break;
-                case '3':
-                document.getElementById('wave').style.fill = '#9A348E';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#9A348E';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#9A348E'; 
-                    document.getElementById('interface').style.backgroundColor = '#9A348E';
-                    document.getElementsByTagName('h1')[0].style.color = '#EA91A4';
-                    document.getElementsByTagName('body')[0].style.backgroundColor = '#EA91A4';
-                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Damion';
-                   
-                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#EA91A4';
-                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#EA91A4';
-                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#EA91A4';
-                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#EA91A4';
-                    break;
-                case '4':
-                document.getElementById('wave').style.fill = '#a2d9ff';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#a2d9ff';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#a2d9ff';
-                    document.getElementById('interface').style.backgroundColor = '#a2d9ff';
-                    document.getElementsByTagName('h1')[0].style.color = '#FFFFFF';
-                    document.getElementsByTagName('body')[0].style.backgroundColor = '#FFFFFF';
-                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Times New Roman';
-
-                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#a2d9ff';
-                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#a2d9ff';
-                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#a2d9ff';
-                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#a2d9ff';
-
-                    break;
-                default:
-                    break;
-            }
-        }
     </script>
 </head>
 
 <body>
-    <header style = "background-color: #a2d9ff;">
-        <img src="images/nav.png" class="header" alt="Nav Bar" width="69px" height="60px" id="nav" />
-        <h1 style = " color: white;">Nice Dude Rubber Ducks</h1>
-        <a href = "index.html">
-                <img src="images/logobackground.png" alt="Logo" width="79px" height="75px" class ="header" id="logo" />
-            </a>
-    </header>
+        <header>
+                <div id="dropdown">
+                        <i class="fas fa-bars"></i>
+                        <div class="dropdown-content">
+                            <a href="index.html">Home</a>
+                            <a href="index.html#about">About</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="customer.html">Reviews</a>
+                        </div>
+                    </div>
+            <h1>Nice Dude Rubber Ducks</h1>
+            <a href = "index.html">
+                    <img src="images/logobackground.png" alt="Logo" width="79px" height="75px" class ="header" id="logo" />
+                </a>
+        </header>
 
     <div style="position: relative;" id="duckyImage">
         <div style="position: absolute; z-index: 6;" id="jewelry"></div>
@@ -106,7 +47,7 @@
         <div style="position: absolute; z-index: 1;" id="base"></div>
         <!--This is where the images go, no touching-->
     </div>
-    
+
     <footer>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path id="wave" fill="#a2d9ff" fill-opacity="1"
@@ -114,17 +55,9 @@
             </path>
         </svg>
         <div id="interface">
-            <input type = "email" placeholder="Insert Email">
-            <a onclick = "alert()" href="" id="next">Checkout</a>
-            <a onclick = "alert()" href="index.html" id="next">Make Another?</a>
-            <a onclick = "alert()" href="contact.html" id="next">Contact Us!</a>
-            <a onclick = "alert()" href="customer.html" id="next">Reviews</a>
-        </div>
-        <div class="styleIcons">
-            <i onclick="colorChange('1')" class="fas fa-paint-brush"></i>
-            <i onclick="colorChange('2')" class="fas fa-paint-brush"></i>
-            <i onclick="colorChange('3')" class="fas fa-paint-brush"></i>
-            <i onclick="colorChange('4')" class="fas fa-paint-brush"></i>
+            <input type="email" placeholder="Insert Email">
+            <a onclick="alert()" href="" id="next">Checkout</a>
+            <a onclick="alert()" href="index.html" id="next">Make Another?</a>
         </div>
     </footer>
     <script>
@@ -137,8 +70,9 @@
             'accessory') + ".png'>";
         document.getElementById("body").innerHTML = "<img src = 'images/bodyclothes/body" + urlParams.get('body') +
             ".png'>";
-            document.getElementById("jewelry").innerHTML = "<img src = 'images/jewelry/jewelry" + urlParams.get('jewelry') +
+        document.getElementById("jewelry").innerHTML = "<img src = 'images/jewelry/jewelry" + urlParams.get('jewelry') +
             ".png'>";
     </script>
 </body>
+
 </html>

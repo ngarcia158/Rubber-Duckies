@@ -8,11 +8,7 @@
     <title>Eyes</title>
     <link href = "javascriptformat.css" rel = "stylesheet">
     <link href="color1.css" rel="stylesheet">
-    <link href="header.css" rel="stylesheet">\
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ca678b4077.js" crossorigin="anonymous"></script>
     <script>
         var value = 0;
@@ -35,102 +31,21 @@
             document.getElementById("eyes").innerHTML = "<img src = 'images/eyes/eye" + value + ".png'>";
         }
 
-        function colorChange(color) {
-            switch (color) {
-                case '1':
-
-                    document.getElementById('wave').style.fill = '#AA998F';
-                    document.getElementById('interface').style.backgroundColor = '#AA998F';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#AA998F';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#7D4F50';
-                    document.getElementsByTagName('h1')[0].style.color = '#CC8B86';
-                    document.getElementsByTagName('header')[0].style.textShadow = '2px 2px #AA998F';
-                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Roboto Condensed';
-                    document.getElementsByTagName('body')[0].style.backgroundColor = '#F9EAE1';
-                    document.getElementById('next').style.backgroundColor = '#CC8B86';
-                    document.getElementsByTagName('button')[0].style.backgroundColor = '#CC8B86';
-                    document.getElementsByTagName('button')[1].style.backgroundColor = '#CC8B86';
-                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#CC8B86';
-                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#CC8B86';
-                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#CC8B86';
-                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#CC8B86';
-
-                    break;
-                case '2':
-                    document.getElementById('wave').style.fill = '#8C9A9E';
-                    document.getElementById('interface').style.backgroundColor = '#8C9A9E';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#8C9A9E';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#554348';
-                    document.getElementsByTagName('header')[0].style.textShadow = '1px 1px #8C9A9E';
-                    document.getElementsByTagName('h1')[0].style.color = '#93B7BE';
-                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Karla';
-                    document.getElementsByTagName('body')[0].style.backgroundColor = '#DFF7F7';
-                    document.getElementById('next').style.backgroundColor = '#93B7BE';
-                    document.getElementsByTagName('button')[0].style.backgroundColor = '#93B7BE';
-                    document.getElementsByTagName('button')[1].style.backgroundColor = '#93B7BE';
-                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#93B7BE';
-                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#93B7BE';
-                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#93B7BE';
-                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#93B7BE';
-                    document.getElementsByClassName('fas fa-paint-brush')[0].style.color = '#DFF7F7';
-                    document.getElementsByClassName('fas fa-paint-brush')[1].style.color = '#DFF7F7';
-                    document.getElementsByClassName('fas fa-paint-brush')[2].style.color = '#DFF7F7';
-                    document.getElementsByClassName('fas fa-paint-brush')[3].style.color = '#DFF7F7';
-                    break;
-                case '3':
-                    document.getElementById('wave').style.fill = '#22223B';
-                    document.getElementById('interface').style.backgroundColor = '#22223B';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#22223B';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#CFA5B4';
-                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Yeon Sung';
-                    document.getElementsByTagName('h1')[0].style.color = '#4A4E69';
-                    document.getElementsByTagName('body')[0].style.backgroundColor = '#9A8C98';
-                    document.getElementsByTagName('header')[0].style.textShadow = '2px 2px #C98BB9';
-                    document.getElementById('next').style.backgroundColor = '#CFA5B4';
-                    document.getElementsByTagName('button')[0].style.backgroundColor = '#CFA5B4';
-                    document.getElementsByTagName('button')[1].style.backgroundColor = '#CFA5B4';
-                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#CFA5B4';
-                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#CFA5B4';
-                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#CFA5B4';
-                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#CFA5B4';
-                    document.getElementsByClassName('fas fa-paint-brush')[0].style.color = '#9A8C98';
-                    document.getElementsByClassName('fas fa-paint-brush')[1].style.color = '#9A8C98';
-                    document.getElementsByClassName('fas fa-paint-brush')[2].style.color = '#9A8C98';
-                    document.getElementsByClassName('fas fa-paint-brush')[3].style.color = '#9A8C98';
-                    break;
-                    break;
-                case '4':
-                    document.getElementById('wave').style.fill = '#676767';
-                    document.getElementById('interface').style.backgroundColor = '#676767';
-                    document.getElementsByClassName('styleIcons')[0].style.backgroundColor = '#676767';
-                    document.getElementsByTagName('header')[0].style.backgroundColor = '#003B6D';
-                    document.getElementsByTagName('h1')[0].style.fontFamily = 'Indie Flower';
-                    document.getElementsByTagName('h1')[0].style.color = '#BDBDBD';
-                    document.getElementsByTagName('body')[0].style.backgroundColor = '#EBEDF3';
-                    document.getElementsByTagName('header')[0].style.textShadow = '1px 1px black';
-                    document.getElementById('next').style.backgroundColor = '#6699CC';
-                    document.getElementsByTagName('button')[0].style.backgroundColor = '#6699CC';
-                    document.getElementsByTagName('button')[1].style.backgroundColor = '#6699CC';
-                    document.getElementsByClassName('fas fa-paint-brush')[0].style.backgroundColor = '#6699CC';
-                    document.getElementsByClassName('fas fa-paint-brush')[1].style.backgroundColor = '#6699CC';
-                    document.getElementsByClassName('fas fa-paint-brush')[2].style.backgroundColor = '#6699CC';
-                    document.getElementsByClassName('fas fa-paint-brush')[3].style.backgroundColor = '#6699CC';
-                    document.getElementsByClassName('fas fa-paint-brush')[0].style.color = '#EBEDF3';
-                    document.getElementsByClassName('fas fa-paint-brush')[1].style.color = '#EBEDF3';
-                    document.getElementsByClassName('fas fa-paint-brush')[2].style.color = '#EBEDF3';
-                    document.getElementsByClassName('fas fa-paint-brush')[3].style.color = '#EBEDF3';
-                    break;
-                default:
-                    break;
-            }
-        }
     </script>
 </head>
 
 <body>
-    <header style = "background-color: #a2d9ff;">
-            <img src="images/nav.png" class ="header" alt="Nav Bar" width="69px" height="60px" id="nav" />
-            <h1 style = " color: white;">Nice Dude Rubber Ducks</h1>
+        <header>
+                <div id="dropdown">
+                        <i class="fas fa-bars"></i>
+                        <div class="dropdown-content">
+                            <a href="index.html">Home</a>
+                            <a href="index.html#about">About</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="customer.html">Reviews</a>
+                        </div>
+                    </div>
+            <h1>Nice Dude Rubber Ducks</h1>
             <a href = "index.html">
                     <img src="images/logobackground.png" alt="Logo" width="79px" height="75px" class ="header" id="logo" />
                 </a>
@@ -152,12 +67,12 @@
                 <a href="" id="next">NEXT</a>
                 <button onclick="numChange(1)"><i class="fas fa-arrow-right"></i></button>
             </div>
-            <div class="styleIcons">
+            <!-- <div class="styleIcons">
                 <i onclick="colorChange('1')" class="fas fa-paint-brush"></i>
                 <i onclick="colorChange('2')" class="fas fa-paint-brush"></i>
                 <i onclick="colorChange('3')" class="fas fa-paint-brush"></i>
                 <i onclick="colorChange('4')" class="fas fa-paint-brush"></i>
-            </div>
+            </div> -->
     
         </footer>
 

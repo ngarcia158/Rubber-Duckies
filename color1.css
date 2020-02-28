@@ -1,44 +1,87 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
 body {
     line-height: 0;
     box-sizing: border-box;
+    font-family: 'Mitr';
 }
-
+.fa-bars {
+    font-size: 2.5rem;
+    color: #2359AF;
+}
 #interface {
     width: 100%;
     display: flex;
+    flex-wrap: column wrap;
+    -ms-flex-wrap: column wrap;
     align-items: center;
     justify-content: center;
     margin-left: auto;
     background-color: #a2d9ff;
 }
+#dropdown {
+    position: relative;
+   
+}
+.dropdown-content a {
+    color: black;
+   padding: 2em;
+    text-decoration: none;
+    display: block;
+    background-color: #FF8882;
+    color: #FFFC72;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    height: 100px;
+    z-index: 99;
+}
+#dropdown:hover .dropdown-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+#wave {
+    fill: #a2d9ff;
+}
+#size,
+#interface a,
+input::placeholder {
+    font-family: 'Mitr';
+    color: #2359AF;
+}
+#size {
+    text-align: center;
+    width: 100vw;
+    font-size: 2em;
+    color: #2359AF;
+    z-index: 99;
+    background-color: #a2d9ff;
+    height: 20px;
+}
 button:focus {
     outline: none;
     border: 4px solid #0000007a;
 }
-button{
+button {
     
     border-radius: 100px;
-    border: 2px solid white;
-    color: white;
+    color: #2359AF;
     padding: .5em;
     margin-bottom: .2em;
     font-size: 2em;
     background-color: transparent;
     width: 100px;
-    border: 2px solid white;
-
+    border: 2px solid #2359AF;
 }
-#next{
+#next {
     margin: 1em;
     font-size: 2em;
     border-radius: 100px;
-    height: 100%;
-    color: white;
-    border: 2px solid white;
-    font-family: 'Source Sans Pro';
-    padding:.7em;
+    color: #2359AF;
+    border: 2px solid #2359AF;
+    padding: .7em;
     text-decoration: none;
 }
 input {
@@ -47,68 +90,111 @@ input {
     border-radius: 100px;
     height: 100%;
     color: gray;
-    
-    border: 2px solid white;
+    border: 2px solid #2359AF;
     font-family: 'Source Sans Pro';
-    padding:.1em;
+    padding: .1em;
     text-decoration: none;
 }
 footer {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     bottom: 0;
     width: 100%;
 }
-
-.styleIcons i {
-    font-size: 1.2em;
-    background-color: transparent;
-    padding: .5em;
-    color: white;
-    border: 2px solid white;
-    border-radius: 100px;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 3%;
-    transition: background-color .25s, color .25s;
-}
-
-.styleIcons i:hover {
-    background-color: white;
-    color: transparent;
+.fa-bars {
+    color: #FFFC72;
 }
 p {
-    color: white;
-}
-.styleIcons {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    background-color: #a2d9ff;
+    color: 2359AF;
 }
 
 #waves {
-    fill: #a2d9ff;
+    fill: #C4FFF7;
 }
-
 #duckyImage {
     height: 550px;
-    margin-top:-30px;
-
+    margin-top: -30px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-a#navicon{
+a#navicon {
     display: block;
- }
- nav.horizontal ul{
+}
+nav.horizontal ul {
     display: none;
- }
- 
- a#navicon:focus+ul, a#navicon:focus+ul {
+}
+a#navicon:focus+ul,
+a#navicon:focus+ul {
     display: block;
- }
- 
+}
+header {
+    background-color: #FF8882;
+    color: #FFFC72;
+    padding: 1em 0em;
+    display: -webkit-flex;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+header h1 {
+    font-size: 5vw;
+    background-color: #FF8882;
+}
+body {
+    background-color: #FCFCFC;
+}
+#reviewContainer {
+    color: #c4e6ff;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    justify-content: center;
+}
+.review {
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    font-family: 'Mitr';
+    box-shadow: -1px 0px 5px rgba(94, 94, 94, 0.308);
+    border-radius: 5px;
+    line-height: 1;
+    background-color: white;
+    
+    z-index: 10;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid rgb(206, 206, 206);
+    height: 50%;
+    width: 25%;
+    flex-direction: column;
+}
+.review p {
+    color: rgb(141, 141, 141);
+    font-size: 1.15rem;
+}
+.review p::before {
+    content: "“";
+    font-size: 2rem;
+}
+.review p::after {
+    content: "”";
+}
+.review h1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: rgb(141, 141, 141);
+    text-align: right;
+    font-size: 2rem;
+    padding: 10px;
+}
+.review h1::before {
+    content: "–";
+}

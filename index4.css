@@ -158,9 +158,9 @@ img#left{
    transform: translateY(14px) rotate(180deg);
 }
 img#rubberDuck{
-   margin-left: 20px;
    margin-right: 10px;
    margin-bottom: 0%;
+   margin-left: 34vw;
 }
 section{
    align-items: center;
@@ -177,7 +177,7 @@ article{
 }
 
 div{
-   margin-left: 90vw;
+   margin-left: 85vw;
 }
 button{
    height: 20px;
@@ -200,7 +200,7 @@ button#three{
 }
 
 button#four{
-   background-color:#92140C; ;
+   background-color:#FE4A49; ;
 }
 
 footer{
