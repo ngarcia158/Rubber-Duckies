@@ -2,7 +2,7 @@
 
 
 function run1(){
-    var color = "contact1.css";
+    var color = "contact.css";
     document.getElementById("css").href = color;
 
 }
